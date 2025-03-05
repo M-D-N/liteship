@@ -1,0 +1,60 @@
+:root {
+    --accent-color: #00A7BF;
+    --accent-color-dark: #004169;
+}
+
+body {
+    font-family: 'Golos Text', sans-serif;
+}
+
+.container {
+    padding: 0 10px;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20.4px;
+    letter-spacing: 0%;
+    padding: 18px 33px;
+    color: #fff;
+    background-color: var(--accent-color);
+    border-radius: 100px;
+    display: inline-block;
+}
+.btn.transparent {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    background-color: transparent; 
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0%;
+    color: #000;
+    opacity: .4;
+    margin-bottom: 27px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    color: var(--accent-color-dark);    
+}
+.text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    max-width: 574px;
+    margin-top: 27px;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,48 @@
+.advantages {
+    margin-top: 128px !important;
+}
+.advantages__top {
+    margin-bottom: 81px;
+}
+
+.advantages .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.advantages .card {
+    max-width: 209px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantages .card__img {
+    width: 157px;
+    height: 157px;
+    border-radius: 50%;
+    background: linear-gradient(360deg, #00A7BF 0%, #0036BF 100%);
+    position: relative;
+}
+.advantages .card__img img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.advantages .card__title {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 23px;
+    text-align: center;
+    color: #2B2C41;
+    margin-bottom: 23px;
+    margin-top: 32px;
+}
+.advantages .card__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+
+}

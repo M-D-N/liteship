@@ -1,0 +1,209 @@
+.header {
+    padding: 18px 0;
+}
+.header__desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 28px;
+    align-items: center;
+}
+.nav__item.subitems {
+    position: relative;
+}
+.nav__item.subitems .nav__link{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.nav__item.subitems .arrow {
+    position: relative;
+    top: 1px;
+}
+.nav__item.subitems.active .arrow{
+    transform: rotate(180deg);
+}
+.socials {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;   
+}
+
+.header .btns {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+
+.lang {
+    position: relative;
+    display: inline-block;
+}
+
+.lang__btn {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 5px;
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.2px;
+    
+}
+
+.lang__dropdown,
+.information {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    min-width: 52px;
+    box-shadow: 0px 4px 100px 0px #0041694D;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    visibility: hidden;
+    pointer-events: none;
+}
+.lang__dropdown {
+    top: calc(100% + 13px);
+    left: -24%;
+}
+.lang__dropdown.active,
+.information.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
+}
+.lang__item {
+    text-align: center;
+    cursor: pointer;
+    color: var(--accent-color-dark);
+}
+
+.lang__item a {
+    text-decoration: none;
+    color: var(--accent-color-dark);
+    display: block;
+    padding: 15px;
+}
+
+
+.lang__item:hover:first-child {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.lang__item:hover:last-child {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.arrow {
+    transition: .3s;
+}
+
+.lang.active .arrow {
+    transform: rotate(180deg);
+}
+
+
+
+.information {
+    top: calc(100% + 30px);
+    min-width: 662px;
+    left: -32px;
+}
+.information__content {
+    padding: 0 34px;
+}
+
+.information .subtitle {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15.6px;
+    color: #000;
+    opacity: .4;
+}
+.information__top {
+    border-bottom: 1px solid #0000000D;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+.information__links {
+    padding-top: 39px;
+    padding-bottom: 39px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000000D;
+}
+.information__list a {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--accent-color-dark);
+}
+.information__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.information__list .contacts {
+    color: var(--accent-color-dark);
+    opacity: .5;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.6px;
+}
+.information__socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.information__socials a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 18px 34px;
+    column-gap: 16px;
+    transition: background .3s;
+}
+.information__socials a:first-child{
+    border-right: 1px solid #0000000D;
+}
+.information__socials a:hover {
+    background: #0000000D;
+}
+.information__socials a:last-child:hover {
+    border-bottom-right-radius: 15px;
+}
+.information__socials a:first-child:hover {
+    border-bottom-left-radius: 15px;
+}
+.information__socials a span:first-child {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--accent-color-dark);
+}
+.information__socials a span:last-child {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--accent-color-dark);
+    opacity: .5;
+    padding-top: 5px;
+}
+.information__text {
+    display: inline-flex;
+    flex-direction: column;
+}

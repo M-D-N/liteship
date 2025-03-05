@@ -1,0 +1,67 @@
+.reviews {
+    margin-bottom: 118px !important; 
+}
+.reviews__top {
+    margin-top: 130px;
+    align-items: flex-end !important;
+}
+.reviews .cards {
+    margin-top: 45px;
+}
+.reviews .card {
+    min-height: 356px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.reviews .card__content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* Растягиваем */
+}
+.reviews .card__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+
+}
+.reviews .card__img img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews .card__user {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.reviews .card__name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1D1F1E;
+}
+.reviews .card__position {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #939393;
+
+}
+.reviews .btns {
+    display: flex;
+    column-gap: 15px;
+} 
+.swiper-button-next-reviews,
+.swiper-button-prev-reviews {
+    cursor: pointer;
+}
+
+
+.reviews .btn {
+    margin-top: 25px;
+}
