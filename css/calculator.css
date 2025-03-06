@@ -1,0 +1,334 @@
+.calculator {
+    margin-bottom: 130px !important;
+}
+.calculator__top {
+    border-bottom: 1px solid #0000001A;
+    padding-bottom: 41px;
+    margin-bottom: 54px;
+}
+.calculator__top .titleimg{
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+}
+.calculator__top .titleimg p {
+    text-align: right;
+    max-width: 376px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.calculator__body {
+    border-radius: 30px;
+    background: #F6F6F6;
+    display: flex;
+    padding: 22px;
+    justify-content: space-between;
+}
+
+.calculator__info {
+    background: #FFFFFF;
+    border-radius: 30px;
+    width: 55.65%;
+    padding: 42px;
+    display: none;
+}
+.calculator__info.active {
+    display: block;
+}
+
+.calculator__infotop {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #00000026;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calculator__infotitle {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.calculator__infotitle span:first-child {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    color: var(--accent-color-dark);
+}
+.calculator__infotitle span:last-child {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    opacity: .5;
+}
+.calculator__infoprice {
+    color: #FF003E;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
+.calculator__infodesc {
+    margin-top: 27px;
+    margin-bottom: 45px;
+}
+
+.calculator__infodesctitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    opacity: .5;    
+}
+.calculator__infodescp {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    margin-top: 13px;    
+}
+
+.calculator__advantages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 36px;
+}
+.calculator__advantagescard:nth-child(n) {
+    width: 43%;
+}
+.calculator__advantagescard:nth-child(2n) {
+    width: 39%;
+}
+.calculator__advantagestitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #004169;
+    margin-bottom: 10px;
+}
+.calculator__advantagesp {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    opacity: .5;    
+}
+.calculator__requirements {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    opacity: .8;
+    margin-top: 45px;
+}
+.calculator__requirements li::before {
+    content: "•";
+    padding: 0 10px;
+}
+.calculator__bonuses {
+    margin-top: 32px;
+}
+.calculator__bonuses li:first-child {
+    border-top: 1px solid #0000001A;
+}
+.calculator__bonuses li{
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #0000001A;
+}
+.calculator__bonuses li span:first-child {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+.calculator__bonuses li span:last-child {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #00AD57;    
+}
+
+
+.calculator__options {
+    width: 38.4%;
+    padding-top: 33px;
+    padding-left: 33px;
+}
+.calculator__optionslist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+.calculator__optioninput input {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    border: 1px solid #fff;    
+    outline: none;
+    transition: .3s;
+}
+.calculator__optioninput input:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.calculator__optionstitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 29px;    
+}
+
+.calculator__option {
+    width: 47.9%;
+}
+.calculator__optionlabel {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    opacity: .5;
+    margin-bottom: 14px;    
+}
+
+
+.dropdown {
+    position: relative;
+    width: 100%;
+}
+.dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 14px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    background: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.dropdown .arrow {
+    transition: .3s;
+    position: relative;
+    top: 0;
+}
+.dropdown.active .dropdown-menu {
+    display: block;
+}
+.dropdown.active .arrow {
+    transform: rotate(180deg);
+    top: 3px;
+}
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+.dropdown-item:hover {
+    background: #0000000D;
+    border-radius: 10px;
+}
+
+.calculator__tarifs {
+    margin-top: 24px;
+}
+.calculator__tarifs p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    opacity: .5;
+    margin-bottom: 14px;
+}
+
+.calculator__tarifcards {
+    display: flex;
+    column-gap: 20px;
+}
+.calculator__tarifcard {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 24px 21px;
+    cursor: pointer;
+}
+
+.calculator__tarifcard.premium .calculator__tariftitle span:first-child {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #D3A900 0%, #FF2600 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.calculator__tarifcard.active {
+    border: 2px solid #00A7BF;
+}
+.calculator__tariftitle {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+.calculator__tariftitle span:first-child{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.6px;
+}
+.calculator__tariftitle span:last-child {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    opacity: .5;
+}
+
+.calculator__tarifprice {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    color: #FF003E;
+    margin-top: 14px;
+    margin-bottom: 16px;
+}
+
+.calculator__tariffees {
+    padding-top: 16px;
+    border-top: 1px solid #00000026;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calculator__tariffees span:first-child {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    opacity: .5;    
+}
+
+.calculator__tariffees span:last-child {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 15px;
+    color: #00AD57    
+}
+
+.calculator__options .btn {
+    margin-bottom: 30px;
+    margin-top: 24px;
+    display: inline-block;
+}

@@ -1,0 +1,46 @@
+.popular .text a {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: Auto;
+    text-decoration-skip-ink: auto;
+    color: #00A7BF;
+}
+
+.titleblock {
+    position: relative;
+}
+.popular__top .titleblock .img {
+    position: absolute;
+    top: -46px;
+    z-index: -1;
+    right: -72px;
+}
+.popular__top {
+    margin-bottom: 58px;
+    align-items: flex-end !important;
+}
+.popular {
+    margin-top: 130px !important;
+}
+
+.popular__cards {
+    display: flex;
+    row-gap: 21px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.popular__card {
+    max-width: 197px;
+    padding: 41px 35px;
+    background: #F6F6F6;
+    border-radius: 30px;
+}
+
+.popular .btn {
+    margin-top: 25px;
+}

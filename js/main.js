@@ -61,3 +61,36 @@ navigation: {
 },
 
 });
+
+const compareSwiper = new Swiper('#compare_swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 20,
+    
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next-compare',
+        prevEl: '.swiper-button-prev-compare',
+    },
+    
+    });
+
+const mainSwiper = new Swiper('#main_swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next-main',
+        prevEl: '.swiper-button-prev-main',
+    },
+    autoplay: {
+        delay: 5000,
+      },
+    
+    });

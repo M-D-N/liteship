@@ -44,6 +44,7 @@
 .lang {
     position: relative;
     display: inline-block;
+    z-index: 100;
 }
 
 .lang__btn {
@@ -122,6 +123,7 @@
     top: calc(100% + 30px);
     min-width: 662px;
     left: -32px;
+    z-index: 100;
 }
 .information__content {
     padding: 0 34px;
@@ -133,6 +135,7 @@
     line-height: 15.6px;
     color: #000;
     opacity: .4;
+    margin-bottom: 0;
 }
 .information__top {
     border-bottom: 1px solid #0000000D;

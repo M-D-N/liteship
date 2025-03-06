@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="/css/swiper.min.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/trust.css" />
+    <link rel="stylesheet" href="/css/compare.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/popular.css" />
+    <link rel="stylesheet" href="/css/calculator.css" />
     <link rel="stylesheet" href="/css/faq.css" />
     <link rel="stylesheet" href="/css/reviews.css" />
     <link rel="stylesheet" href="/css/advantages.css" />
@@ -148,7 +153,7 @@
             </svg>
           </a>
           <ul class="lang__dropdown">
-            <li class="lang__item"><a href="#ru">RU</a></li>
+            <li class="lang__item"><a href="#uz">UZ</a></li>
           </ul>
         </div>
         <div class="btns">
@@ -157,11 +162,724 @@
         </div>
       </div>
     </header>
+    <section class="main">
+      <!-- Slider main container -->
+      <div class="swiper" id="main_swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide card">
+            <div class="card__content">
+              <div class="main__subtitle">
+                <img src="/img/icons/main.svg" alt="arrows" loading="lazy" />
+                <span>Доставка без границ</span>
+              </div>
+              <div class="main__title">
+                Ваш надежный партнер в доставке товаров из США
+              </div>
+              <div class="main__text">
+                Сервис доставки, помогающий клиентам легко заказывать товары из
+                магазинов и получать их в Узбекистане.
+              </div>
+              <div class="btns">
+                <a href="#" class="btn">Начать покупки</a>
+                <a href="#" class="btn transparent">О сервисе</a>
+              </div>
+            </div>
+            <div class="card__img">
+              <img src="/img/slide1.png" alt="slide" width="816" height="555" />
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card__content">
+              <div class="main__subtitle">
+                <img src="/img/icons/main.svg" alt="arrows" loading="lazy" />
+                <span>ТОЛЬКО У НАС</span>
+              </div>
+              <div class="main__title">
+                Специальная цена на доставку витаминов iHerb
+              </div>
+              <div class="main__text">
+                Огромный выбор БАДов, косметики, продуктов и спортивного питания
+              </div>
+              <div class="btns">
+                <a href="#" class="btn">Узнать больше</a>
+              </div>
+            </div>
+            <div class="card__img">
+              <img src="/img/slide2.png" alt="slide" width="816" height="555" />
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card__content">
+              <div class="main__subtitle">
+                <img src="/img/icons/main.svg" alt="arrows" loading="lazy" />
+                <span>ПРОДУКЦИЯ APPLE</span>
+              </div>
+              <div class="main__title">Доставка техники APPLE из США</div>
+              <div class="main__text">
+                Все товары Apple по американским ценам доступны пользователям
+                LiteShip уже сейчас.
+              </div>
+              <div class="btns">
+                <a href="#" class="btn">Начать покупки</a>
+                <a href="#" class="btn transparent">Магазины</a>
+              </div>
+            </div>
+            <div class="card__img">
+              <img src="/img/slide3.png" alt="slide" width="816" height="555" />
+            </div>
+          </div>
+          <div class="swiper-slide card">
+            <div class="card__content">
+              <div class="main__subtitle">
+                <img src="/img/icons/main.svg" alt="arrows" loading="lazy" />
+                <span>С НАМИ ВЫГОДНЕЕ</span>
+              </div>
+              <div class="main__title">Платим 3$ с каждой отправленной посылки</div>
+              <div class="main__text">
+                Приводите друзей — они получат 15% скидки на первую посылку, а вы — $3 с каждой их покупки в течение года!
+              </div>
+              <div class="btns">
+                <a href="#" class="btn">Начать покупки</a>
+                <a href="#" class="btn transparent">Магазины</a>
+              </div>
+            </div>
+            <div class="card__img">
+              <img src="/img/slide4.png" alt="slide" width="816" height="555" />
+            </div>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="main__btns">
+          <div class="swiper-button-prev-main">
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 37 37"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M37 18.5C37 14.8411 35.915 11.2643 33.8822 8.22196C31.8494 5.17965 28.9601 2.80846 25.5796 1.40824C22.1992 0.0080172 18.4795 -0.358347 14.8908 0.355482C11.3022 1.06931 8.0058 2.83126 5.41853 5.41853C2.83126 8.0058 1.0693 11.3022 0.355478 14.8908C-0.358351 18.4795 0.00801216 22.1992 1.40823 25.5796C2.80845 28.9601 5.17964 31.8494 8.22195 33.8822C11.2643 35.915 14.841 37 18.5 37C23.4049 36.9947 28.1073 35.0439 31.5756 31.5756C35.0439 28.1073 36.9947 23.4049 37 18.5ZM13.2368 20.6799C12.6587 20.1017 12.334 19.3176 12.334 18.5C12.334 17.6824 12.6587 16.8983 13.2368 16.3201L20.441 9.11588L22.6209 11.2958L15.4167 18.5L22.6795 25.7643L20.5042 27.9443L13.2368 20.6799Z"
+                fill="#004169"
+              />
+            </svg>
+          </div>
+          <div class="swiper-button-next-main">
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 37 37"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 18.5C0 22.159 1.08501 25.7357 3.11781 28.778C5.15062 31.8204 8.03992 34.1915 11.4204 35.5918C14.8008 36.992 18.5205 37.3583 22.1092 36.6445C25.6978 35.9307 28.9942 34.1687 31.5815 31.5815C34.1687 28.9942 35.9307 25.6978 36.6445 22.1092C37.3583 18.5205 36.992 14.8008 35.5918 11.4204C34.1915 8.03992 31.8204 5.15062 28.778 3.11781C25.7357 1.08501 22.159 0 18.5 0C13.5951 0.005305 8.89266 1.95611 5.42438 5.42438C1.95611 8.89266 0.005305 13.5951 0 18.5ZM23.7632 16.3201C24.3413 16.8983 24.666 17.6824 24.666 18.5C24.666 19.3176 24.3413 20.1017 23.7632 20.6799L16.559 27.8841L14.3791 25.7042L21.5833 18.5L14.3205 11.2357L16.4958 9.05575L23.7632 16.3201Z"
+                fill="#004169"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="compare container">
+      <div class="top compare__top">
+        <div class="titleblock">
+          <div class="subtitle">Сравним цены?</div>
+          <h3 class="title">Выгода от шопинга <br />в США очевидна!</h3>
+          <div class="text">
+            Экономьте на покупках без лишних наценок! Наш сервис помогает
+            заказывать товары напрямую от продавцов по выгодным ценам.
+          </div>
+        </div>
+        <div class="titleimg">
+          <img
+            src="/img/compare.png"
+            alt="compare"
+            loading="lazy"
+            width="509"
+            height="221"
+          />
+        </div>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper compare__cards" id="compare_swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide compare__card">
+            <div class="compare__cardtop">
+              <img
+                src="/img/boots.png"
+                alt="product"
+                loading="lazy"
+                width="402"
+                height="228"
+                class="img"
+              />
+              <div class="economyblock">
+                <div class="economyblock__inner">
+                  <span>35 <sup>%</sup></span>
+                  <span>Экономия</span>
+                </div>
+              </div>
+            </div>
+            <div class="compare__cardinner">
+              <div class="compare__content">
+                <div class="compare__info">
+                  <div class="compare__title">
+                    New Balance, Fresh Foam X 1080v13
+                  </div>
+                  <div class="compare__subtitle">Кроссовки</div>
+                  <a href="#" class="btn">Заказать товар</a>
+                </div>
+                <div class="compare__price">
+                  <ul>
+                    <li><span>Цена на Amazon</span><span>109$</span></li>
+                    <li><span>Доставка</span><span>9.55$</span></li>
+                    <li><span>Цена в магазинах</span><span>185$</span></li>
+                  </ul>
+                  <div class="economy">Экономия: 66.45$</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide compare__card">
+            <div class="compare__cardtop">
+              <img
+                src="/img/tplink.png"
+                alt="product"
+                loading="lazy"
+                width="402"
+                height="228"
+                class="img"
+              />
+              <div class="economyblock">
+                <div class="economyblock__inner">
+                  <span>35 <sup>%</sup></span>
+                  <span>Экономия</span>
+                </div>
+              </div>
+            </div>
+            <div class="compare__cardinner">
+              <div class="compare__content">
+                <div class="compare__info">
+                  <div class="compare__title">
+                    New Balance, Fresh Foam X 1080v13
+                  </div>
+                  <div class="compare__subtitle">Кроссовки</div>
+                  <a href="#" class="btn">Заказать товар</a>
+                </div>
+                <div class="compare__price">
+                  <ul>
+                    <li><span>Цена на Amazon</span><span>109$</span></li>
+                    <li><span>Доставка</span><span>9.55$</span></li>
+                    <li><span>Цена в магазинах</span><span>185$</span></li>
+                  </ul>
+                  <div class="economy">Экономия: 66.45$</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide compare__card">
+            <div class="compare__cardtop">
+              <img
+                src="/img/tplink.png"
+                alt="product"
+                loading="lazy"
+                width="402"
+                height="228"
+                class="img"
+              />
+              <div class="economyblock">
+                <div class="economyblock__inner">
+                  <span>29 <sup>%</sup></span>
+                  <span>Экономия</span>
+                </div>
+              </div>
+            </div>
+            <div class="compare__cardinner">
+              <div class="compare__content">
+                <div class="compare__info">
+                  <div class="compare__title">
+                    New Balance, Fresh Foam X 1080v13
+                  </div>
+                  <div class="compare__subtitle">Кроссовки</div>
+                  <a href="#" class="btn">Заказать товар</a>
+                </div>
+                <div class="compare__price">
+                  <ul>
+                    <li><span>Цена на Amazon</span><span>109$</span></li>
+                    <li><span>Доставка</span><span>9.55$</span></li>
+                    <li><span>Цена в магазинах</span><span>185$</span></li>
+                  </ul>
+                  <div class="economy">Экономия: 66.45$</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="bts">
+          <div class="swiper-button-prev-compare">
+            <svg
+              width="37"
+              height="37"
+              viewBox="0 0 37 37"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M37 18.5C37 14.8411 35.915 11.2643 33.8822 8.22196C31.8494 5.17965 28.9601 2.80846 25.5796 1.40824C22.1992 0.0080172 18.4795 -0.358347 14.8908 0.355482C11.3022 1.06931 8.0058 2.83126 5.41853 5.41853C2.83126 8.0058 1.0693 11.3022 0.355478 14.8908C-0.358351 18.4795 0.00801216 22.1992 1.40823 25.5796C2.80845 28.9601 5.17964 31.8494 8.22195 33.8822C11.2643 35.915 14.841 37 18.5 37C23.4049 36.9947 28.1073 35.0439 31.5756 31.5756C35.0439 28.1073 36.9947 23.4049 37 18.5ZM13.2368 20.6799C12.6587 20.1017 12.334 19.3176 12.334 18.5C12.334 17.6824 12.6587 16.8983 13.2368 16.3201L20.441 9.11588L22.6209 11.2958L15.4167 18.5L22.6795 25.7643L20.5042 27.9443L13.2368 20.6799Z"
+                fill="#004169"
+              />
+            </svg>
+          </div>
+          <div class="swiper-button-next-compare">
+            <svg
+              width="37"
+              height="37"
+              viewBox="0 0 37 37"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 18.5C0 22.159 1.08501 25.7357 3.11781 28.778C5.15062 31.8204 8.03992 34.1915 11.4204 35.5918C14.8008 36.992 18.5205 37.3583 22.1092 36.6445C25.6978 35.9307 28.9942 34.1687 31.5815 31.5815C34.1687 28.9942 35.9307 25.6978 36.6445 22.1092C37.3583 18.5205 36.992 14.8008 35.5918 11.4204C34.1915 8.03992 31.8204 5.15062 28.778 3.11781C25.7357 1.08501 22.159 0 18.5 0C13.5951 0.005305 8.89266 1.95611 5.42438 5.42438C1.95611 8.89266 0.005305 13.5951 0 18.5ZM23.7632 16.3201C24.3413 16.8983 24.666 17.6824 24.666 18.5C24.666 19.3176 24.3413 20.1017 23.7632 20.6799L16.559 27.8841L14.3791 25.7042L21.5833 18.5L14.3205 11.2357L16.4958 9.05575L23.7632 16.3201Z"
+                fill="#004169"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container popular">
+      <div class="popular__top top">
+        <div class="titleblock">
+          <div class="subtitle">Проверенные магазины</div>
+          <h3 class="title">
+            Самые популярные <br />
+            онлайн-магазины в США
+          </h3>
+          <div class="text">
+            Покупайте самостоятельно или обратитесь за помощью
+            <a href="#">к&nbsp;нашим&nbsp;операторам.</a>
+          </div>
+          <img
+            src="/img/popular_online.png"
+            alt="popular online"
+            class="img"
+            width="227"
+            height="178"
+          />
+        </div>
+        <div class="titleimg">
+          <img
+            src="/img/popular.png"
+            alt="popular"
+            loading="lazy"
+            width="516"
+            height="262"
+          />
+        </div>
+      </div>
+      <div class="popular__cards">
+        <div class="popular__card">
+          <img
+            src="/img/logos/amazon.png"
+            alt="amazon"
+            loading="lazy"
+            width="126"
+            height="56"
+          />
+        </div>
+        <div class="popular__card">
+          <img
+            src="/img/logos/asos.png"
+            alt="asos"
+            loading="lazy"
+            width="126"
+            height="56"
+          />
+        </div>
+        <div class="popular__card">
+          <img
+            src="/img/logos/ebay.png"
+            alt="ebay"
+            loading="lazy"
+            width="126"
+            height="56"
+          />
+        </div>
+        <div class="popular__card">
+          <img
+            src="/img/logos/zara.png"
+            alt="zara"
+            loading="lazy"
+            width="126"
+            height="56"
+          />
+        </div>
+        <div class="popular__card">
+          <img
+            src="/img/logos/gap.png"
+            alt="gap"
+            loading="lazy"
+            width="126"
+            height="56"
+          />
+        </div>
+        <div class="popular__card">
+          <img
+            src="/img/logos/th.png"
+            alt="th"
+            loading="lazy"
+            width="126"
+            height="56"
+          />
+        </div>
+        <div class="popular__card">
+          <img
+            src="/img/logos/zappos.png"
+            alt="zappos"
+            loading="lazy"
+            width="126"
+            height="56"
+          />
+        </div>
+        <div class="popular__card">
+          <img
+            src="/img/logos/vs.png"
+            alt="vs"
+            loading="lazy"
+            width="126"
+            height="56"
+          />
+        </div>
+        <div class="popular__card">
+          <img
+            src="/img/logos/holister.png"
+            alt="holister"
+            loading="lazy"
+            width="126"
+            height="56"
+          />
+        </div>
+        <div class="popular__card">
+          <img
+            src="/img/logos/6pm.png"
+            alt="6pm"
+            loading="lazy"
+            width="126"
+            height="56"
+          />
+        </div>
+        <div class="popular__card">
+          <img
+            src="/img/logos/macys.png"
+            alt="macys"
+            loading="lazy"
+            width="126"
+            height="56"
+          />
+        </div>
+        <div class="popular__card">
+          <img
+            src="/img/logos/adidas.png"
+            alt="adidas"
+            loading="lazy"
+            width="126"
+            height="56"
+          />
+        </div>
+      </div>
+      <a href="#" class="btn">Все магазины →</a>
+    </section>
+    <section class="container trust">
+      <div class="trust__inner">
+        <div class="trust__content">
+          <div class="trust__title">
+            Доверьте нам оформление&nbsp;заказов в&nbsp;американских магазинах
+          </div>
+          <div class="trust__text">
+            Данный метод актуален для жителей Узбекистана, у которых еще нет
+            иностранной банковской карты. Он также полезен в случае, если
+            магазин не отправляет товары посредникам или принимает только
+            американские карты.
+          </div>
+          <div class="trust__btns">
+            <a href="#" class="trust__btn" target="_blank">Попробовать →</a>
+            <a href="#" class="trust__btn transparent" target="_blank"
+              >Как это работает</a
+            >
+          </div>
+        </div>
+        <div class="trust__img">
+          <img
+            src="/img/trust.png"
+            alt="buy"
+            loading="lazy"
+            width="551"
+            height="453"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="calculator container">
+      <div class="calculator__top top">
+        <div class="titleblock">
+          <div class="subtitle">Калькулятор стоимости</div>
+          <h3 class="title">
+            Онлайн калькулятор стоимости&nbsp;доставки товара
+          </h3>
+        </div>
+        <div class="titleimg">
+          <p>
+            Для наиболее точного расчета укажите город, вес посылки и стоимость
+            товара, мы рассчитаем вам стоимость по выбранному тарифу
+          </p>
+          <img
+            src="/img/calculator.png"
+            alt="calculator"
+            loading="lazy"
+            width="91"
+            height="87"
+          />
+        </div>
+      </div>
+      <div class="calculator__body">
+        <div class="calculator__options">
+          <div class="calculator__optionstitle">Регулярный прайс</div>
+          <div class="calculator__optionslist">
+            <div class="calculator__option">
+              <div class="calculator__optionlabel">Склад</div>
+              <div class="calculator__optioninput">
+                <input type="text" value="США" disabled />
+              </div>
+            </div>
+            <div class="calculator__option">
+              <div class="calculator__optionlabel">Вес посылки</div>
+              <div class="calculator__optioninput">
+                <input type="text" placeholder="Введите вес" id="weight" />
+              </div>
+            </div>
+            <div class="calculator__option">
+              <div class="calculator__optionlabel">Стоимость товара</div>
+              <div class="calculator__optioninput">
+                <input type="text" placeholder="Введите цену" id="price" />
+              </div>
+            </div>
+            <div class="calculator__option">
+              <div class="calculator__optionlabel">Ваш город</div>
+              <div class="calculator__optioninput">
+                <div class="dropdown" id="dropdown-menu">
+                  <div class="dropdown-toggle" onclick="toggleDropdown()">
+                    <span id="selected-option">Ташкент</span>
+                    <span class="arrow"
+                      ><img
+                        src="/img/icons/dropdown-arrow.svg"
+                        alt="arrow"
+                        loading="lazy"
+                    /></span>
+                  </div>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item" onclick="selectOption('Ташкент')">
+                      Ташкент
+                    </li>
+                  </ul>
+                  <input
+                    type="hidden"
+                    name="dropdown-value"
+                    id="dropdown-value"
+                    value="Ташкент"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">Расчитать стоимость</a>
+          <div class="calculator__tarifs">
+            <p>Выберите тариф</p>
+            <div class="calculator__tarifcards">
+              <div class="calculator__tarifcard active" id="econom">
+                <div class="calculator__tariftitle">
+                  <span>Econom</span> <span>5-10 дней</span>
+                </div>
+                <div class="calculator__tarifprice">$<span>9.55</span></div>
+                <div class="calculator__tariffees">
+                  <span>Таможенная пошлина</span>
+                  <span>97.5$</span>
+                </div>
+              </div>
+              <div class="calculator__tarifcard premium" id="premium">
+                <div class="calculator__tariftitle">
+                  <span
+                    ><span>FastBox</span
+                    ><span
+                      ><img
+                        src="/img/icons/cron.svg"
+                        width="19"
+                        height="16"
+                        alt="cron"
+                        loading="lazy" /></span
+                  ></span>
+                  <span>4-9 дней</span>
+                </div>
+                <div class="calculator__tarifprice">$<span>12.37</span></div>
+                <div class="calculator__tariffees">
+                  <span>Таможенная пошлина</span>
+                  <span>97.5$</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calculator__info active" id="econom-content">
+          <div class="calculator__infotop">
+            <div class="calculator__infotitle">
+              <span>Econom</span>
+              <span>5-10 дней</span>
+            </div>
+            <div class="calculator__infoprice">$<span>9.55</span></div>
+          </div>
+          <div class="calculator__infodesc">
+            <div class="calculator__infodesctitle">Описание</div>
+            <div class="calculator__infodescp">
+              Экономично и быстро, без проверок и консолидации с другими
+              посылками. Выгодно при шопинге в одном магазине. Минимальный
+              составляет вес 1 кг.
+            </div>
+          </div>
+          <div class="calculator__advantages">
+            <div class="calculator__advantagescard">
+              <div class="calculator__advantagestitle">Таможенный лимит</div>
+              <div class="calculator__advantagesp">
+                До 1000 $ за один крартал и 30 кг на одну посылку пошлиной не
+                облагаются
+              </div>
+            </div>
+            <div class="calculator__advantagescard">
+              <div class="calculator__advantagestitle">Объемный вес</div>
+              <div class="calculator__advantagesp">
+                Учитывается при превышении над физическим в два раза и более
+              </div>
+            </div>
+            <div class="calculator__advantagescard">
+              <div class="calculator__advantagestitle">
+                Помощ по оплаты пошлины
+              </div>
+              <div class="calculator__advantagesp">Нет</div>
+            </div>
+            <div class="calculator__advantagescard">
+              <div class="calculator__advantagestitle">
+                Отслеживание посылки
+              </div>
+              <div class="calculator__advantagesp">На нашем сайте</div>
+            </div>
+            <div class="calculator__advantagescard">
+              <div class="calculator__advantagestitle">Получение</div>
+              <div class="calculator__advantagesp">Самовывоз</div>
+            </div>
+            <div class="calculator__advantagescard">
+              <div class="calculator__advantagestitle">Частота отправлений</div>
+              <div class="calculator__advantagesp">По вторникам</div>
+            </div>
+          </div>
+          <ul class="calculator__requirements">
+            <li>
+              Обязательно предварительное оформление посылки до прихода на склад
+            </li>
+            <li>Без переупаковки или переупаковка по нашему усмотрению</li>
+            <li>Доставка до дома начинается + 3 $.</li>
+          </ul>
+          <ul class="calculator__bonuses">
+            <li>
+              <span>Приемка посылки на складе</span> <span>Бесплатно</span>
+            </li>
+            <li><span>Стандартная упаковка</span> <span>Бесплатно</span></li>
+          </ul>
+        </div>
+        <div class="calculator__info" id="premium-content">
+          <div class="calculator__infotop">
+            <div class="calculator__infotitle">
+              <span>FastBox</span>
+              <span>4-9 дней</span>
+            </div>
+            <div class="calculator__infoprice">$<span>12.37</span></div>
+          </div>
+          <div class="calculator__infodesc">
+            <div class="calculator__infodesctitle">Описание</div>
+            <div class="calculator__infodescp">
+              Доступность спецзапросов и консолидации с другими посылками.
+              Доступна доставка курьером или самовывоз из пункта выдачи.
+              Минимальный вес составляет 1 кг
+            </div>
+          </div>
+          <div class="calculator__advantages">
+            <div class="calculator__advantagescard">
+              <div class="calculator__advantagestitle">Таможенный лимит</div>
+              <div class="calculator__advantagesp">
+                До 1000 $ за один крартал и 30 кг на одну посылку пошлиной не
+                облагаются
+              </div>
+            </div>
+            <div class="calculator__advantagescard">
+              <div class="calculator__advantagestitle">Объемный вес</div>
+              <div class="calculator__advantagesp">
+                Учитывается при превышении над физическим в два раза и более
+              </div>
+            </div>
+            <div class="calculator__advantagescard">
+              <div class="calculator__advantagestitle">
+                Помощ по оплаты пошлины
+              </div>
+              <div class="calculator__advantagesp">Да</div>
+            </div>
+            <div class="calculator__advantagescard">
+              <div class="calculator__advantagestitle">
+                Отслеживание посылки
+              </div>
+              <div class="calculator__advantagesp">На нашем сайте</div>
+            </div>
+            <div class="calculator__advantagescard">
+              <div class="calculator__advantagestitle">Получение</div>
+              <div class="calculator__advantagesp">До дома или самовывоз</div>
+            </div>
+            <div class="calculator__advantagescard">
+              <div class="calculator__advantagestitle">Частота отправлений</div>
+              <div class="calculator__advantagesp">
+                по вторникам и четвергам
+              </div>
+            </div>
+          </div>
+          <ul class="calculator__requirements">
+            <li>
+              Обязательно предварительное оформление посылки до прихода на склад
+            </li>
+            <li>
+              Объединение нескольких посылок в одну и стандартная упаковка без
+              доплаты
+            </li>
+            <li>Доставка включается в стоимост тарифу</li>
+          </ul>
+          <ul class="calculator__bonuses">
+            <li>
+              <span>Приемка посылки на складе</span> <span>Бесплатно</span>
+            </li>
+            <li><span>Стандартная упаковка</span> <span>Бесплатно</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section class="steps container">
       <div class="steps__top top">
         <div class="titleblock">
           <div class="subtitle">Онлайн покупки — это просто</div>
-          <div class="title">4 простейших шага <br />для покупок из США</div>
+          <h3 class="title">4 простейших шага <br />для покупок из США</h3>
         </div>
         <div class="titleimg">
           <img
@@ -273,7 +991,7 @@
       <div class="advantages__top top">
         <div class="titleblock">
           <div class="subtitle">Почему именно мы?</div>
-          <div class="title">Наши ключевые <br />преимущества</div>
+          <h3 class="title">Наши ключевые <br />преимущества</h3>
           <div class="text">
             Ваш груз заберут и доставят до места назначения вовремя
             и&nbsp;в&nbsp;полной сохранности, Мы ценим каждого клиента!
@@ -356,7 +1074,7 @@
       <div class="reviews__top top">
         <div class="titleblock">
           <div class="subtitle">О нас говорят</div>
-          <div class="title">Отзывы наших клиентов</div>
+          <h3 class="title">Отзывы наших клиентов</h3>
         </div>
         <div class="btns">
           <!-- If we need navigation buttons -->
@@ -583,7 +1301,9 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn">Все отзывы  <span style="padding-left: 5px;">→</span></a>
+        <a href="#" class="btn"
+          >Все отзывы <span style="padding-left: 5px">→</span></a
+        >
       </div>
     </section>
     <section class="faq container">
@@ -727,5 +1447,6 @@
     <script defer src="/js/swiper.min.js"></script>
     <script defer src="/js/faqs.js"></script>
     <script defer src="/js/main.js"></script>
+    <script defer src="/js/calculator.js"></script>
   </body>
 </html>
