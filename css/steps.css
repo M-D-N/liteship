@@ -19,7 +19,6 @@
     font-weight: 500;
     font-size: 200px;
     line-height: 160px;
-    letter-spacing: 0%;
     background: linear-gradient(180deg, #00A7BF 0%, #0078B4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -50,10 +49,21 @@
     max-width: 600px;
     font-weight: 400;
     font-size: 18px;
-    line-height: 27px;
-    letter-spacing: 0%;
-    
+    line-height: 27px;    
 }
 .steps__info .btn {
     margin-top: 55px;
+}
+
+@media (max-width: 1200px) {
+    .steps__number {
+        margin-right: 30px;
+    }
+    .steps__img:last-child img {
+        width: 300px;
+        height: auto;
+    }
+    .steps__info {
+        margin-top: 40px;
+    }
 }

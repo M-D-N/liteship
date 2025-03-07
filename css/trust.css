@@ -45,3 +45,10 @@
     color: white;
     margin-left: 13px;
 }
+
+@media (max-width: 1200px) {
+    .trust__img img {
+        width: 400px;
+        height: auto;
+    }
+}

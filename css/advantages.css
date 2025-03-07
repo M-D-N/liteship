@@ -46,3 +46,22 @@
     text-align: center;
 
 }
+
+@media (max-width: 1000px) {
+    .advantages .cards {
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 60px;
+    }
+    .advantages .card {
+        max-width: 46.58%;
+    }
+    .advantages .card__img {
+        width: 98px;
+        height: 98px;
+    }
+    .advantages .card__img img {
+        width: 30px;
+        height: 30px;
+    }
+}

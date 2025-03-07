@@ -1,7 +1,8 @@
 .main {
     border-radius: 30px;
-    width: 1450px;
+    max-width: 1470px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 .main .card {
     background-color: #F6F6F6;
@@ -68,4 +69,56 @@
     color: #2B2C43;
     background-color: transparent;
     font-weight: 400;
+}
+
+@media (max-width: 1280px) {
+    .main .card__img img {
+        max-width: 600px;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main {
+        padding: 0;
+        position: relative;
+        top: -5px;
+    }
+    .main .card {
+        flex-direction: column;
+        border-radius: 0;
+        padding-top: 80px;
+        padding-left: 25px;
+        padding-right: 25px;
+        min-height: 90vh;
+    }
+    #main_swiper {
+        border-radius: 0;
+    }
+    .main .btns {
+        display: inline-flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-top: 40px;
+    }
+    .main .btn.btn.transparent {
+        display: none;
+    }
+    .main__btns {
+        bottom: 65px;
+        right: auto;
+        left: 25px;
+    }
+    .main__title {
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+    .main .card__img img {
+        height: 292px;
+        width: 100%;
+    }
+    .main .card__content {
+        max-width: 100%;
+    }
 }

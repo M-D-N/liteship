@@ -159,3 +159,60 @@
     font-size: 14px;
     line-height: 20px;    
 }
+
+@media (max-width: 1200px) {
+    .compare__cardtop {
+        right: 0;
+    }
+    .compare__cardtop img {
+        width: 300px;
+    }
+}
+@media (max-width: 1000px) {
+    .economyblock {
+        width: 145px;
+        height: 145px;
+        position: absolute;
+        right: 0;
+    }
+    .economyblock span:first-child {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .economyblock span:first-child sup {
+        margin-left: -10px;
+    }
+    .compare__cardtop {
+        top: 100px;
+    }
+    .compare__content {
+        flex-direction: column;
+        padding-top: 88px;
+        align-items: flex-start;
+        padding-left: 0;
+    }
+    .compare__cardinner {
+        padding-left: 25px;
+    }
+    #compare_swiper {
+        padding: 0 25px;
+        margin-left: -25px;
+        margin-right: -25px;
+        position: relative;
+    }
+    .compare__cards {
+        margin-top: -100px;
+    }
+    .swiper-button-prev-compare {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: 100;
+    }
+    .swiper-button-next-compare {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 100;
+    }
+}

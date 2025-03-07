@@ -51,7 +51,7 @@ const swiper = new Swiper('#reviews_swiper', {
 // Optional parameters
 // direction: 'vertical',
 loop: true,
-slidesPerView: 4,
+slidesPerView: 1,
 spaceBetween: 20,
 
 // Navigation arrows
@@ -59,14 +59,18 @@ navigation: {
     nextEl: '.swiper-button-next-reviews',
     prevEl: '.swiper-button-prev-reviews',
 },
-
+breakpoints: {
+    1000: {
+        slidesPerView: 4,
+    },
+}
 });
 
 const compareSwiper = new Swiper('#compare_swiper', {
     // Optional parameters
     // direction: 'vertical',
     loop: true,
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 20,
     
     // Navigation arrows
@@ -74,7 +78,11 @@ const compareSwiper = new Swiper('#compare_swiper', {
         nextEl: '.swiper-button-next-compare',
         prevEl: '.swiper-button-prev-compare',
     },
-    
+    breakpoints: {
+        1000: {
+            slidesPerView: 2,
+        },
+    }
     });
 
 const mainSwiper = new Swiper('#main_swiper', {
@@ -94,3 +102,11 @@ const mainSwiper = new Swiper('#main_swiper', {
       },
     
     });
+
+const burger = document.getElementById("burger");
+const headerMobile = document.getElementById("mobileMenu")
+burger.addEventListener("click", function (e) {
+    e.currentTarget.classList.toggle("active")
+    headerMobile.classList.toggle("active")
+    document.body.classList.toggle("hidden")
+})
