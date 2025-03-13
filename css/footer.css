@@ -124,3 +124,22 @@
         margin-left: 0;
     }
 }
+@media(max-width: 490px){
+    .footer{
+        padding-top: 75px;
+        padding-bottom: 30px;
+    }
+    .copiright{
+        margin-top: 65px !important;
+    }
+    .footer__navlist li{
+        margin-bottom: 15px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media(max-width: 380px){
+    .footer__navlist, .footer__navlist:last-child{
+        width: 100%;
+    }
+}

@@ -60,3 +60,15 @@
   .faq {
     margin-bottom: 152px !important;
   }
+  @media(max-width: 490px){
+    .faq{
+      margin-bottom: 60px !important;
+    }
+    .accordion{
+      margin-top: 55px;
+    }
+    .accordion__header{
+      font-size: 16px;
+      line-height: 43px;
+    }
+  }

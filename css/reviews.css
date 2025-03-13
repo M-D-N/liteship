@@ -77,3 +77,26 @@
         margin-right: -25px;
     }
 }
+@media(max-width: 490px){
+    .reviews__top{
+        margin-top: 90px;
+    }
+    .reviews .cards{
+        margin-top: 38px;
+    }
+    .reviews .btns > div{
+        position: absolute;
+        top: 50%;
+        z-index: 999;
+    }
+    .reviews .btns > div:first-child{
+        left: 7px;
+    }
+    .reviews .btns > div:last-child{
+        right: 7px;
+    }
+    .reviews{
+        position: relative;
+        margin-bottom: 60px !important;
+    }
+}

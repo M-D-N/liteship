@@ -122,3 +122,11 @@
         max-width: 100%;
     }
 }
+@media(max-width: 490px){
+    .main .card{
+        min-height: 85vh;
+    }
+    .main__btns{
+        bottom: 105px !important;
+    }
+}

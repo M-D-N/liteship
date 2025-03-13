@@ -216,3 +216,32 @@
         z-index: 100;
     }
 }
+@media(max-width: 820px){
+    .compare__info,
+    .compare__price{
+        width: 100%;
+    }
+}
+
+@media (max-width: 490px){
+    .compare{
+        margin-top: 60px !important;
+    }
+    .compare__cardinner{
+        padding-right: 25px;
+        padding-bottom: 117px;
+    }
+    .compare__price{
+        padding: 25px 20px;
+    }
+    .compare__card .btn{
+        position: absolute;
+        bottom: 40px;
+    }
+    .swiper-button-next-compare{
+        right: 7px !important;
+    }
+    .swiper-button-prev-compare{
+        left: 7px !important;
+    }
+}

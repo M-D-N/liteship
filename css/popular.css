@@ -71,3 +71,14 @@
         height: 33px;
     }
 }
+@media (max-width: 490px){
+    .popular{
+        margin-top: 80px !important;
+    }
+    .popular__top{
+        margin-bottom: 45px;
+    }
+    .popular .btn{
+        margin-top: 45px;
+    }
+}
