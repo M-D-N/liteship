@@ -25,7 +25,8 @@
     position: relative;
     top: 1px;
 }
-.nav__item.subitems.active .arrow{
+.nav__item.subitems.active .arrow,
+.header__mobileitem a.active .arrow{
     transform: rotate(180deg);
 }
 .socials {
@@ -227,6 +228,7 @@
     padding-top: 92px;
     transition: .3s;
     display: none;
+    overflow-y: scroll;
 }
 .header__mobiletitle {
     font-weight: 600;
@@ -254,12 +256,63 @@
     align-items: center;
     row-gap: 35px;
 }
+.header__mobilenav{
+    padding: 0 25px;
+}
+
 .header__mobileitem a {
     font-weight: 500;
     font-size: 21px;
     line-height: 25.2px;
     color: #004169;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    width: 100%;
 }
+
+.header__mobileitem,
+.header__mobilenav,
+.header__mobilelist,
+.header__mobileitem a,
+.header__mobile-drop > li {
+    width: 100%;
+}
+
+.header__mobile-drop{
+    border-radius: 30px;
+    padding: 30px 0;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    gap: 25px;
+    margin: 20px 0 5px 0;
+    height: 0;
+    opacity: 0;
+    transition: all 800ms ease;
+}
+/* .header__mobile-drop.active{
+    height: 100%;
+    opacity: 1;
+    display: flex;
+    transition: all 800ms ease;
+} */
+
+.header__mobile-drop li{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__mobile-drop li a{
+    font-weight: 400;
+    font-size: 19px;
+}
+
 @media (max-width: 1280px) {
     .information {
         left: -200%;

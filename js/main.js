@@ -104,7 +104,27 @@ const mainSwiper = new Swiper('#main_swiper', {
     });
 
 const burger = document.getElementById("burger");
-const headerMobile = document.getElementById("mobileMenu")
+const headerMobile = document.getElementById("mobileMenu");
+const headerMobileDrop = document.getElementById("headerMobileDrop");
+const headerMobileDropUl = document.querySelector(".header__mobile-drop");
+
+headerMobileDrop.addEventListener("click", function(e){
+    e.currentTarget.classList.toggle("active");
+    if (e.currentTarget.classList.contains('active')) {
+        headerMobileDropUl.style.display = "flex";
+        setTimeout(() => {
+            headerMobileDropUl.style.opacity = "1";
+            headerMobileDropUl.style.height = "auto";
+        }, 10);
+    } else {
+        setTimeout(() => {
+            headerMobileDropUl.style.height = "0";
+            headerMobileDropUl.style.opacity = "0";
+            headerMobileDropUl.style.display = "none";
+        }, 100);
+    }
+})
+
 burger.addEventListener("click", function (e) {
     e.currentTarget.classList.toggle("active")
     headerMobile.classList.toggle("active")
