@@ -65,6 +65,22 @@ body {
 .hidden {
     overflow: hidden;
 }
+.crust {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px; 
+    margin: 40px 0 80px 0;
+}
+.crust a,
+.crust span{
+    font-size: 16px;
+    line-height: 23px;
+    color: #004169;
+}
+.crust span {
+    color: #00416966;
+}
 @media (max-width: 1200px) {
     .container {
         max-width: 100%;

@@ -42,66 +42,66 @@ subitemsContainer.addEventListener("mouseleave", () => {
 });
 
 
-new ItcAccordion(document.querySelector('.accordion'), {
-    alwaysOpen: false
-  });
-
-
-const swiper = new Swiper('#reviews_swiper', {
-// Optional parameters
-// direction: 'vertical',
-loop: true,
-slidesPerView: 1,
-spaceBetween: 20,
-
-// Navigation arrows
-navigation: {
-    nextEl: '.swiper-button-next-reviews',
-    prevEl: '.swiper-button-prev-reviews',
-},
-breakpoints: {
-    1000: {
-        slidesPerView: 4,
-    },
-}
-});
-
-const compareSwiper = new Swiper('#compare_swiper', {
-    // Optional parameters
-    // direction: 'vertical',
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 20,
-    
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next-compare',
-        prevEl: '.swiper-button-prev-compare',
-    },
-    breakpoints: {
-        1000: {
-            slidesPerView: 2,
+if (window.location.pathname === '/index.html') {
+    new ItcAccordion(document.querySelector('.accordion'), {
+        alwaysOpen: false
+    });
+    const swiper = new Swiper('#reviews_swiper', {
+        // Optional parameters
+        // direction: 'vertical',
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next-reviews',
+            prevEl: '.swiper-button-prev-reviews',
         },
-    }
-    });
-
-const mainSwiper = new Swiper('#main_swiper', {
-    // Optional parameters
-    // direction: 'vertical',
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 20,
+        breakpoints: {
+            1000: {
+                slidesPerView: 4,
+            },
+        }
+        });
+        
+    const compareSwiper = new Swiper('#compare_swiper', {
+        // Optional parameters
+        // direction: 'vertical',
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next-compare',
+            prevEl: '.swiper-button-prev-compare',
+        },
+        breakpoints: {
+            1000: {
+                slidesPerView: 2,
+            },
+        }
+        });
     
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next-main',
-        prevEl: '.swiper-button-prev-main',
-    },
-    autoplay: {
-        delay: 5000,
-      },
-    
-    });
+    const mainSwiper = new Swiper('#main_swiper', {
+        // Optional parameters
+        // direction: 'vertical',
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next-main',
+            prevEl: '.swiper-button-prev-main',
+        },
+        autoplay: {
+            delay: 5000,
+            },
+        
+        });
+}
 
 const burger = document.getElementById("burger");
 const headerMobile = document.getElementById("mobileMenu");
@@ -130,3 +130,9 @@ burger.addEventListener("click", function (e) {
     headerMobile.classList.toggle("active")
     document.body.classList.toggle("hidden")
 })
+
+// how page
+
+if (window.location.pathname === '/pages/howorks.html'){
+    
+}
