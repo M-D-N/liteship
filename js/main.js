@@ -134,5 +134,57 @@ burger.addEventListener("click", function (e) {
 // how page
 
 if (window.location.pathname === '/pages/howorks.html'){
-    
+    const howBtns = document.querySelectorAll('.how__content-ul li');
+    const arrBtns = Array.from(howBtns);
+
+    const contentBars = document.querySelectorAll('.how__content-bar')
+    const arrBars = Array.from(contentBars);
+
+    arrBtns.map((e) => {
+        e.addEventListener('click', () => {
+            arrBtns.map((el) => {
+                el.classList.remove('active');
+            })
+            e.classList.add('active');
+            // console.log(e.innerHTML);
+            if(e.innerHTML == "1. Регистрируемся"){
+                arrBars.map((item) => {
+                    if(item.classList.contains('reg')){
+                        arrBars.map((index) => {
+                            index.classList.remove('active')
+                        })
+                        item.classList.add('active');
+                    }
+                })      
+            }else if(e.innerHTML == "2. Делаем покупки"){
+                arrBars.map((item) => {
+                    if(item.classList.contains('shop')){
+                        arrBars.map((index) => {
+                            index.classList.remove('active')
+                        })
+                        item.classList.add('active');
+                    }
+                })      
+            }else if(e.innerHTML == "3. Создаем отправку"){
+                arrBars.map((item) => {
+                    if(item.classList.contains('send')){
+                        arrBars.map((index) => {
+                            index.classList.remove('active')
+                        })
+                        item.classList.add('active');
+                    }
+                })      
+            }else if(e.innerHTML == "4. Получаем посылку"){
+                arrBars.map((item) => {
+                    if(item.classList.contains('post')){
+                        arrBars.map((index) => {
+                            index.classList.remove('active')
+                        })
+                        item.classList.add('active');
+                    }
+                })      
+            }
+        })
+    })
+
 }
