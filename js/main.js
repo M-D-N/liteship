@@ -140,12 +140,24 @@ if (window.location.pathname === '/pages/howorks.html'){
     const contentBars = document.querySelectorAll('.how__content-bar')
     const arrBars = Array.from(contentBars);
 
+    const dropHow = document.getElementById('howMobileDrop');
+    const mobilSpan = document.querySelector('.how-mobile-nav')
+
     arrBtns.map((e) => {
         e.addEventListener('click', () => {
             arrBtns.map((el) => {
                 el.classList.remove('active');
             })
             e.classList.add('active');
+            e.classList.toggle('activearr');
+
+            dropHow.classList.toggle('active');
+
+            dropHow.addEventListener('click', () => {
+                mobilSpan.innerHTML = e.innerHTML;
+                e.classList.add('active');
+            })
+            
             // console.log(e.innerHTML);
             if(e.innerHTML == "1. Регистрируемся"){
                 arrBars.map((item) => {
@@ -186,5 +198,4 @@ if (window.location.pathname === '/pages/howorks.html'){
             }
         })
     })
-
 }
