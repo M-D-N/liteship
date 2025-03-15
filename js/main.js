@@ -149,14 +149,21 @@ if (window.location.pathname === '/pages/howorks.html'){
                 el.classList.remove('active');
             })
             e.classList.add('active');
-            e.classList.toggle('activearr');
+            
 
             dropHow.classList.toggle('active');
+
+            if(dropHow.classList.contains('active')){
+                e.classList.add('activearr');
+            }
 
             dropHow.addEventListener('click', () => {
                 mobilSpan.innerHTML = e.innerHTML;
                 e.classList.add('active');
+                e.classList.remove('activearr');
             })
+
+            
             
             // console.log(e.innerHTML);
             if(e.innerHTML == "1. Регистрируемся"){
