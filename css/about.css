@@ -1,0 +1,136 @@
+.about__main{
+    position: relative;
+}
+.about__top{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 75px;
+    height: 600px;
+}
+.about__top img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 560px;
+    object-fit: contain;
+}
+.about__crust{
+    margin-bottom: 55px;
+}
+.about__top .how__top{
+    width: 60%;
+}
+.about__top .how__top p:first-of-type{
+    margin: 27px 0;
+    font-size: 17px;
+    line-height: 26px;
+    color: #004169;
+    font-weight: 500;
+}
+.about__top .how__top p:last-of-type{
+    margin: 27px 0;
+    font-size: 17px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: 400;
+}
+.about__detail{
+    background-color: #F6F6F6;
+    padding: 95px 0;
+    margin-bottom: 75px;
+}
+.about__detail-tem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.about__detail-left h2{
+    font-size: 30px;
+    line-height: 38px;
+    color: #004169;
+    font-weight: 500;
+    width: 60%;
+}
+.about__detail-left p{
+    font-size: 17px;
+    line-height: 28px;
+    color: #2B2C41;
+    font-weight: 400;
+    width: 95%;
+}
+.about__detail-left p:first-of-type{
+    margin: 65px 0 30px 0;
+}
+.about__mission{
+    margin-bottom: 135px;
+}
+.about__mission h2{
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 500;
+    color: #004169;
+    margin-bottom: 65px;
+}
+.about__mission p{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    line-height: 28px;
+    color: #2B2C41;
+    font-weight: 400;
+    margin-bottom: 27px;
+}
+.about__mission p span:first-of-type{
+    font-weight: 600;
+}
+.about__mission ul{
+    margin-bottom: 27px;
+    padding-left: 20px;
+}
+.about__mission ul li{
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.about__contact{
+    margin-bottom: 185px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 135px;
+}
+.about__contact-left h3{
+    font-size: 30px;
+    line-height: 38px;
+    color: #004169;
+    margin-bottom: 65px;
+    font-weight: 500;
+}
+.about__contact-number{
+    margin-bottom: 28px;
+}
+.about__contact-number p{
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 500;
+    color: #00416980;
+    display: flex;
+    flex-direction: column;
+}
+.about__contact-number a{
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 500;
+    color: #004169;
+}
+.about__contact-number:first-of-type a{
+    color: #004169;
+    font-size: 28px;
+    line-height: 27px;
+    font-weight: 500;
+}
+.about__contact-right iframe{
+    
+}
