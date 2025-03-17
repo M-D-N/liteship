@@ -20,7 +20,8 @@
 }
 .main__blog-carts{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    justify-content: center;
     column-gap: 20px;
     row-gap: 80px;
     padding: 15px 0;
@@ -49,4 +50,27 @@
     line-height: 30px;
     color: #004169;
     font-weight: 500;
+}
+
+@media(max-width: 870px){
+    .main__blog-carts{
+        justify-items: center;
+    }
+    .blog__cart {
+        justify-content: center;
+        align-items: center;
+        max-width: 400px;
+        width: 100%;
+    }
+}
+@media(max-width: 840px){
+    .blog__carts-nav{
+        display: none;
+    }
+    .main__blog .container .how__content-ul:nth-of-type(3).active{
+        height: 100%;
+    }
+    .blog__cart img{
+        width: 100%;
+    }
 }

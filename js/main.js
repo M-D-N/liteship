@@ -133,7 +133,7 @@ burger.addEventListener("click", function (e) {
 
 // how page
 
-if (window.location.pathname === '/pages/howorks.html'){
+if (window.location.pathname === '/pages/howorks.html' || window.location.pathname === '/pages/blog.html'){
     const howBtns = document.querySelectorAll('.how__content-ul li');
     const arrBtns = Array.from(howBtns);
 
@@ -204,7 +204,7 @@ if (window.location.pathname === '/pages/howorks.html'){
                 })      
             }
         })
-    })
+    });
 }
 
 if(window.location.pathname === '/pages/blog.html'){
@@ -298,7 +298,7 @@ if(window.location.pathname === '/pages/blog.html'){
             </div>
         `);
     });
-    
+
     const blogCartsNav = document.querySelectorAll('.blog__carts-nav li');
     const cart = document.querySelectorAll('.blog__cart');
 
