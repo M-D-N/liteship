@@ -12,6 +12,7 @@
     gap: 10px;
     width: max-content;
     margin-bottom: 27px;
+    text-transform: uppercase;
 }
 .how__top h1{
     color: #004169;
