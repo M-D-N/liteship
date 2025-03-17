@@ -214,63 +214,72 @@ if(window.location.pathname === '/pages/blog.html'){
             img: '../img/blogCart.svg',
             time: '24.07.2023',
             title: 'Покупать товары из Америки просто и выгодно (рубрика 1)',
-            filter: 'rub1'
+            filter: 'rub1',
+            url: 'post.html'
         },
         {
             id: 2,
             img: '../img/blogCart.svg',
             time: '24.07.2023',
             title:'Покупать товары из Америки просто и выгодно (рубрика 2)',
-            filter: 'rub2'
+            filter: 'rub2',
+            url: 'post.html'
         },
         {
             id: 3,
             img: '../img/blogCart.svg',
             time: '24.07.2023',
             title:'Покупать товары из Америки просто и выгодно (рубрика 3)',
-            filter: 'rub3'
+            filter: 'rub3',
+            url: 'post.html'
         },
         {
             id: 4,
             img: '../img/blogCart.svg',
             time: '24.07.2023',
             title:'Покупать товары из Америки просто и выгодно (рубрика 1)',
-            filter: 'rub1'
+            filter: 'rub1',
+            url: 'post.html'
         },
         {
             id: 5,
             img: '../img/blogCart.svg',
             time: '24.07.2023',
             title:'Покупать товары из Америки просто и выгодно (рубрика 3)',
-            filter: 'rub3'
+            filter: 'rub3',
+            url: 'post.html'
         },
         {
             id: 6,
             img: '../img/blogCart.svg',
             time: '24.07.2023',
             title:'Покупать товары из Америки просто и выгодно (рубрика 2)',
-            filter: 'rub2'
+            filter: 'rub2',
+            url: 'post.html'
         },
         {
             id: 7,
             img: '../img/blogCart.svg',
             time: '24.07.2023',
             title:'Покупать товары из Америки просто и выгодно (рубрика 4)',
-            filter: 'rub4'
+            filter: 'rub4',
+            url: 'post.html'
         },
         {
             id: 8,
             img: '../img/blogCart.svg',
             time: '24.07.2023',
             title:'Покупать товары из Америки просто и выгодно (рубрика 4)',
-            filter: 'rub4'
+            filter: 'rub4',
+            url: 'post.html'
         },
         {
             id: 9,
             img: '../img/blogCart.svg',
             time: '24.07.2023',
             title:'Покупать товары из Америки просто и выгодно (рубрика 3)',
-            filter: 'rub3'
+            filter: 'rub3',
+            url: 'post.html'
         }
     ]; 
 
@@ -278,7 +287,7 @@ if(window.location.pathname === '/pages/blog.html'){
 
     carts.forEach((el) => {
         cartContainer.insertAdjacentHTML('beforeend', `
-            <div id="${el.id}" class="blog__cart ${el.filter}">
+            <a href="${el.url}" id="${el.id}" class="blog__cart ${el.filter}">
                 <img src="${el.img}" alt="blogCart">
                 <div class="blog__cart-time">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -295,7 +304,7 @@ if(window.location.pathname === '/pages/blog.html'){
                     <span>${el.time}</span>
                 </div>
                 <p>${el.title}</p>
-            </div>
+            </a>
         `);
     });
 

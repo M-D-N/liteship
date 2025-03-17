@@ -1,0 +1,60 @@
+.main__post > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+}
+.main__post .about__mission img{
+    max-width: 850px;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 65px;
+}
+.main__post .about__mission > div{
+    width: 92%;
+}
+.main__post .about__mission > div p{
+    font-size: 15px;
+    line-height: 28px;
+}
+.main__post .container .main__blog-carts{
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 75px;
+    row-gap: 50px;
+}
+.main__post .container .main__blog-carts a p:last-of-type{
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 25px 0;
+}
+.main__post-right{
+    margin-bottom: 115px;
+}
+.main__post-right .btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1030px){
+    .main__post .container .main__blog-carts{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+@media (max-width: 840px){
+    .main__post > div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__post .container .main__blog-carts{
+        width: 100%;
+    }
+    .main__post-right .main__blog-carts .blog__cart{
+        width: 100%;
+        max-width: unset;
+    }
+}
