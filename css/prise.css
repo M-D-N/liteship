@@ -59,10 +59,8 @@
     color: #00A7BF;
     padding: 12px 33px;
     transition: 300ms;
-}
-.prise__service div a:hover{
-    background: #00A7BF;
-    color: #fff;
+    cursor: default;
+    pointer-events: none;
 }
 .prise__shop-extra{
     margin-top: 35px;

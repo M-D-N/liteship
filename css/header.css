@@ -13,6 +13,7 @@
     align-items: center;
 }
 .nav__item.subitems {
+    cursor: pointer;
     position: relative;
 }
 .nav__item.subitems .nav__link{
