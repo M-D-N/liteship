@@ -41,8 +41,6 @@ subitemsContainer.addEventListener("mouseleave", () => {
     }, 300); // Задержка 300ms перед скрытием
 });
 
-
-if (window.location.pathname === '/index.html') {
     new ItcAccordion(document.querySelector('.accordion'), {
         alwaysOpen: false
     });
@@ -101,7 +99,6 @@ if (window.location.pathname === '/index.html') {
             },
         
         });
-}
 
 const burger = document.getElementById("burger");
 const headerMobile = document.getElementById("mobileMenu");
