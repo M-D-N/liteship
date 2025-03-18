@@ -64,3 +64,160 @@
     background: #00A7BF;
     color: #fff;
 }
+.prise__shop-extra{
+    margin-top: 35px;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+.prise__shop-card{
+    padding: 35px 25px;
+    background: #F6F6F6;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 23px;
+    max-width: 400px;
+    width: 100%;
+}
+.prise__shop-card-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.prise__shop-card-top span{
+    border-radius: 100px;
+    padding: 20px 30px;
+    background: #fff;
+    color: #FF003E;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+}
+.prise__shop-card-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 23px;
+}
+.prise__shop-card-bottom p{
+    color: #004169;
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 500;
+}
+.prise__shop-card-bottom span{
+    font-size: 14px;
+    line-height: 20px;
+    color: #00000080;
+    font-weight: 400;
+}
+.prise__shop{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 100px;
+}
+.prise__shop:last-of-type{
+    margin-top: 80px;
+    margin-bottom: 170px;
+}
+.prise__shop > p{
+    position: absolute;
+    padding: 25px 40px;
+    background-color: #00A7BF;
+    color: #fff;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    top: -40px;
+    left: 30px;
+}
+.prise__shop-item{
+    padding: 55px 70px;
+    border: 1px solid #00000033;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+}
+.prise__shop-item > p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+.prise__shop-status{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.prise__shop-status a{
+    padding: 12px 33px;
+    border: 1px solid #00A7BF;
+    color: #00A7BF;
+    border-radius: 100px;
+}
+.prise__main .titleblock{
+    max-width: 100%;
+}
+@media(max-width: 1000px){
+    .prise__shop-status{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 875px){
+
+    .prise__shop-extra{
+        justify-content: center;
+    }
+    .prise__service{
+        background: none;
+    }
+    
+}
+@media(max-width: 630px){
+    .prise__service{
+        flex-direction: column;
+        align-items: start;
+        padding: 0;
+        border: none;
+    }
+    .prise__service div{
+        padding-left: 0;
+        border-left: none;
+        padding-top: 35px;
+        border-top: 1px solid #00416933;
+    }
+    .prise__shop-card{
+        max-width: 100%;
+    }
+    .prise__shop > p{
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 20px 30px;
+    }
+    .prise__shop-item{
+        padding: 30px;
+    }
+    .prise__shop,
+    .prise__shop:last-of-type{
+        margin-top: 40px;
+    }
+    .prise__main-services{
+        margin-bottom: 100px;
+    }
+}
