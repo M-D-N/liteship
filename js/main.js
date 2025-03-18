@@ -41,6 +41,7 @@ subitemsContainer.addEventListener("mouseleave", () => {
     }, 300); // Задержка 300ms перед скрытием
 });
 
+const accardionSwiper = () => {
     new ItcAccordion(document.querySelector('.accordion'), {
         alwaysOpen: false
     });
@@ -99,6 +100,7 @@ subitemsContainer.addEventListener("mouseleave", () => {
             },
         
         });
+}
 
 const burger = document.getElementById("burger");
 const headerMobile = document.getElementById("mobileMenu");
