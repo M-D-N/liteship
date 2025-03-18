@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/calculator.css">
+    <link rel="stylesheet" href="../css/reviews.css">
     <link rel="stylesheet" href="../css/how.css">
     <link rel="stylesheet" href="../css/prise.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -243,6 +245,299 @@
             </div>
         </div>
 
+        <div class="container">
+          <div class="prise__main-services">
+            <div class="prise__service">
+              <img src="../img/priseServices.svg" alt="priseServices">
+              <div>
+                <h3>Ваш личный адрес для покупок</h3>
+                <p>Персональный адрес для покупок на нашем современном автоматизированном складе.</p>
+                <a class="btn" href="#!">Бесплатно</a> 
+              </div>
+            </div>
+            <div class="prise__service">
+              <img src="../img/priseServices1.svg" alt="priseServices">
+              <div>
+                <h3>Ваш личный адрес для покупок</h3>
+                <p>Персональный адрес для покупок на нашем современном автоматизированном складе.</p>
+                <a class="btn" href="#!">Бесплатно</a> 
+              </div>
+            </div>
+            <div class="prise__service">
+              <img src="../img/priseServices2.svg" alt="priseServices">
+              <div>
+                <h3>Ваш личный адрес для покупок</h3>
+                <p>Персональный адрес для покупок на нашем современном автоматизированном складе.</p>
+                <a class="btn" href="#!">Бесплатно</a> 
+              </div>
+            </div>
+            <div class="prise__service">
+              <img src="../img/priseServices3.svg" alt="priseServices">
+              <div>
+                <h3>Ваш личный адрес для покупок</h3>
+                <p>Персональный адрес для покупок на нашем современном автоматизированном складе.</p>
+                <a class="btn" href="#!">Бесплатно</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="calculator container">
+          <div class="calculator__top top">
+            <div class="titleblock">
+              <div class="subtitle">Калькулятор стоимости</div>
+              <h3 class="title">
+                Онлайн калькулятор стоимости&nbsp;доставки товара
+              </h3>
+            </div>
+            <div class="titleimg">
+              <p>
+                Для наиболее точного расчета укажите город, вес посылки и стоимость
+                товара, мы рассчитаем вам стоимость по выбранному тарифу
+              </p>
+              <img
+                src="/img/calculator.png"
+                alt="calculator"
+                loading="lazy"
+                width="91"
+                height="87"
+              />
+            </div>
+          </div>
+          <div class="calculator__body">
+            <div class="calculator__options">
+              <div class="calculator__optionstitle">Регулярный прайс</div>
+              <div class="calculator__optionslist">
+                <div class="calculator__option">
+                  <div class="calculator__optionlabel">Склад</div>
+                  <div class="calculator__optioninput">
+                    <input type="text" value="США" disabled />
+                  </div>
+                </div>
+                <div class="calculator__option">
+                  <div class="calculator__optionlabel">Вес посылки</div>
+                  <div class="calculator__optioninput">
+                    <input type="text" placeholder="Введите вес" id="weight" />
+                  </div>
+                </div>
+                <div class="calculator__option">
+                  <div class="calculator__optionlabel">Стоимость товара</div>
+                  <div class="calculator__optioninput">
+                    <input type="text" placeholder="Введите цену" id="price" />
+                  </div>
+                </div>
+                <div class="calculator__option">
+                  <div class="calculator__optionlabel">Ваш город</div>
+                  <div class="calculator__optioninput">
+                    <div class="dropdown" id="dropdown-menu">
+                      <div class="dropdown-toggle" onclick="toggleDropdown()">
+                        <span id="selected-option">Ташкент</span>
+                        <span class="arrow"
+                          ><img
+                            src="/img/icons/dropdown-arrow.svg"
+                            alt="arrow"
+                            loading="lazy"
+                        /></span>
+                      </div>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-item" onclick="selectOption('Ташкент')">
+                          Ташкент
+                        </li>
+                      </ul>
+                      <input
+                        type="hidden"
+                        name="dropdown-value"
+                        id="dropdown-value"
+                        value="Ташкент"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn">Расчитать стоимость</a>
+              <div class="calculator__tarifs">
+                <p>Выберите тариф</p>
+                <div class="calculator__tarifcards">
+                  <div class="calculator__tarifcard active" id="econom">
+                    <div class="calculator__tariftitle">
+                      <span>Econom</span> <span>5-10 дней</span>
+                    </div>
+                    <div class="calculator__tarifprice">$<span>9.55</span></div>
+                    <div class="calculator__tariffees">
+                      <span>Таможенная пошлина</span>
+                      <span>97.5$</span>
+                    </div>
+                  </div>
+                  <div class="calculator__tarifcard premium" id="premium">
+                    <div class="calculator__tariftitle">
+                      <span
+                        ><span>FastBox</span
+                        ><span
+                          ><img
+                            src="/img/icons/cron.svg"
+                            width="19"
+                            height="16"
+                            alt="cron"
+                            loading="lazy" /></span
+                      ></span>
+                      <span>4-9 дней</span>
+                    </div>
+                    <div class="calculator__tarifprice">$<span>12.37</span></div>
+                    <div class="calculator__tariffees">
+                      <span>Таможенная пошлина</span>
+                      <span>97.5$</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculator__info active" id="econom-content">
+              <div class="calculator__infotop">
+                <div class="calculator__infotitle">
+                  <span>Econom</span>
+                  <span>5-10 дней</span>
+                </div>
+                <div class="calculator__infoprice">$<span>9.55</span></div>
+              </div>
+              <div class="calculator__infodesc">
+                <div class="calculator__infodesctitle">Описание</div>
+                <div class="calculator__infodescp">
+                  Экономично и быстро, без проверок и консолидации с другими
+                  посылками. Выгодно при шопинге в одном магазине. Минимальный
+                  составляет вес 1 кг.
+                </div>
+              </div>
+              <div class="calculator__advantages">
+                <div class="calculator__advantagescard">
+                  <div class="calculator__advantagestitle">Таможенный лимит</div>
+                  <div class="calculator__advantagesp">
+                    До 1000 $ за один крартал и 30 кг на одну посылку пошлиной не
+                    облагаются
+                  </div>
+                </div>
+                <div class="calculator__advantagescard">
+                  <div class="calculator__advantagestitle">Объемный вес</div>
+                  <div class="calculator__advantagesp">
+                    Учитывается при превышении над физическим в два раза и более
+                  </div>
+                </div>
+                <div class="calculator__advantagescard">
+                  <div class="calculator__advantagestitle">
+                    Помощ по оплаты пошлины
+                  </div>
+                  <div class="calculator__advantagesp">Нет</div>
+                </div>
+                <div class="calculator__advantagescard">
+                  <div class="calculator__advantagestitle">
+                    Отслеживание посылки
+                  </div>
+                  <div class="calculator__advantagesp">На нашем сайте</div>
+                </div>
+                <div class="calculator__advantagescard">
+                  <div class="calculator__advantagestitle">Получение</div>
+                  <div class="calculator__advantagesp">Самовывоз</div>
+                </div>
+                <div class="calculator__advantagescard">
+                  <div class="calculator__advantagestitle">Частота отправлений</div>
+                  <div class="calculator__advantagesp">По вторникам</div>
+                </div>
+              </div>
+              <ul class="calculator__requirements">
+                <li>
+                  Обязательно предварительное оформление посылки до прихода на склад
+                </li>
+                <li>Без переупаковки или переупаковка по нашему усмотрению</li>
+                <li>Доставка до дома начинается + 3 $.</li>
+              </ul>
+              <ul class="calculator__bonuses">
+                <li>
+                  <span>Приемка посылки на складе</span> <span>Бесплатно</span>
+                </li>
+                <li><span>Стандартная упаковка</span> <span>Бесплатно</span></li>
+              </ul>
+            </div>
+            <div class="calculator__info" id="premium-content">
+              <div class="calculator__infotop">
+                <div class="calculator__infotitle">
+                  <span>FastBox</span>
+                  <span>4-9 дней</span>
+                </div>
+                <div class="calculator__infoprice">$<span>12.37</span></div>
+              </div>
+              <div class="calculator__infodesc">
+                <div class="calculator__infodesctitle">Описание</div>
+                <div class="calculator__infodescp">
+                  Доступность спецзапросов и консолидации с другими посылками.
+                  Доступна доставка курьером или самовывоз из пункта выдачи.
+                  Минимальный вес составляет 1 кг
+                </div>
+              </div>
+              <div class="calculator__advantages">
+                <div class="calculator__advantagescard">
+                  <div class="calculator__advantagestitle">Таможенный лимит</div>
+                  <div class="calculator__advantagesp">
+                    До 1000 $ за один крартал и 30 кг на одну посылку пошлиной не
+                    облагаются
+                  </div>
+                </div>
+                <div class="calculator__advantagescard">
+                  <div class="calculator__advantagestitle">Объемный вес</div>
+                  <div class="calculator__advantagesp">
+                    Учитывается при превышении над физическим в два раза и более
+                  </div>
+                </div>
+                <div class="calculator__advantagescard">
+                  <div class="calculator__advantagestitle">
+                    Помощ по оплаты пошлины
+                  </div>
+                  <div class="calculator__advantagesp">Да</div>
+                </div>
+                <div class="calculator__advantagescard">
+                  <div class="calculator__advantagestitle">
+                    Отслеживание посылки
+                  </div>
+                  <div class="calculator__advantagesp">На нашем сайте</div>
+                </div>
+                <div class="calculator__advantagescard">
+                  <div class="calculator__advantagestitle">Получение</div>
+                  <div class="calculator__advantagesp">До дома или самовывоз</div>
+                </div>
+                <div class="calculator__advantagescard">
+                  <div class="calculator__advantagestitle">Частота отправлений</div>
+                  <div class="calculator__advantagesp">
+                    по вторникам и четвергам
+                  </div>
+                </div>
+              </div>
+              <ul class="calculator__requirements">
+                <li>
+                  Обязательно предварительное оформление посылки до прихода на склад
+                </li>
+                <li>
+                  Объединение нескольких посылок в одну и стандартная упаковка без
+                  доплаты
+                </li>
+                <li>Доставка включается в стоимост тарифу</li>
+              </ul>
+              <ul class="calculator__bonuses">
+                <li>
+                  <span>Приемка посылки на складе</span> <span>Бесплатно</span>
+                </li>
+                <li><span>Стандартная упаковка</span> <span>Бесплатно</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <div class="container">
+          <div class="titleblock">
+            <div class="subtitle">Быстро и удобно</div>
+            <h3 class="title">Покупки с операторами Liteship</h3>
+          </div>
+          <div class="prise__shop">
+            
+          </div>
+        </div>
+
+
     </main>
     
     <footer class="footer">
@@ -330,6 +625,8 @@
           © 2025 Liteship. Все права защищены.
         </div>
     </footer>
+    <script src="../js/calculator.js"></script>
     <script src="../js/main.js"></script>
+
 </body>
 </html>
