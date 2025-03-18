@@ -239,10 +239,10 @@
       </div>
       <div class="how__content">
         <ul class="how__content-ul">
-          <li class="active">1. Регистрируемся</li>
-          <li>2. Делаем покупки</li>
-          <li>3. Создаем отправку</li>
-          <li>4. Получаем посылку</li>
+          <li class="rub1 active">1. Регистрируемся</li>
+          <li class="rub2">2. Делаем покупки</li>
+          <li class="rub3">3. Создаем отправку</li>
+          <li class="rub4">4. Получаем посылку</li>
         </ul>
         <ul class="how__content-ul">
           <li class="active">
@@ -255,10 +255,10 @@
           </li>
         </ul>
         <ul id="howMobileDrop" class="how__content-ul">
-          <li>1. Регистрируемся</li>
-          <li>2. Делаем покупки</li>
-          <li>3. Создаем отправку</li>
-          <li>4. Получаем посылку</li>
+          <li class="rub1">1. Регистрируемся</li>
+          <li class="rub2">2. Делаем покупки</li>
+          <li class="rub3">3. Создаем отправку</li>
+          <li class="rub4">4. Получаем посылку</li>
         </ul>
         <div class="how__content-bar reg active">
           <div class="how__content-item">
@@ -464,7 +464,7 @@
                   e.classList.remove('activearr');
               })
               // console.log(e.innerHTML);
-              if(e.innerHTML == "1. Регистрируемся"){
+              if(e.classList.contains("rub1")){
                   arrBars.map((item) => {
                       if(item.classList.contains('reg')){
                           arrBars.map((index) => {
@@ -473,7 +473,7 @@
                           item.classList.add('active');
                       }
                   })      
-              }else if(e.innerHTML == "2. Делаем покупки"){
+              }else if(e.classList.contains("rub2")){
                   arrBars.map((item) => {
                       if(item.classList.contains('shop')){
                           arrBars.map((index) => {
@@ -482,7 +482,7 @@
                           item.classList.add('active');
                       }
                   })      
-              }else if(e.innerHTML == "3. Создаем отправку"){
+              }else if(e.classList.contains("rub3")){
                   arrBars.map((item) => {
                       if(item.classList.contains('send')){
                           arrBars.map((index) => {
@@ -491,7 +491,7 @@
                           item.classList.add('active');
                       }
                   })      
-              }else if(e.innerHTML == "4. Получаем посылку"){
+              }else if(e.classList.contains("rub4")){
                   arrBars.map((item) => {
                       if(item.classList.contains('post')){
                           arrBars.map((index) => {
