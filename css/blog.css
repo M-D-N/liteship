@@ -74,3 +74,11 @@
         width: 100%;
     }
 }
+@media(max-width: 500px){
+    .blog__cart{
+        max-width: 100%;
+    }
+    .main__blog-carts{
+        grid-template-columns: auto;
+    }
+}
