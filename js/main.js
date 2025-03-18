@@ -132,8 +132,6 @@ burger.addEventListener("click", function (e) {
 })
 
 // how page
-
-if (window.location.pathname === '/pages/howorks.html' || window.location.pathname === '/pages/blog.html'){
     const howBtns = document.querySelectorAll('.how__content-ul li');
     const arrBtns = Array.from(howBtns);
 
@@ -205,9 +203,7 @@ if (window.location.pathname === '/pages/howorks.html' || window.location.pathna
             }
         })
     });
-}
 
-if(window.location.pathname === '/pages/blog.html'){
     const carts = [
         {
             id: 1,
@@ -356,4 +352,3 @@ if(window.location.pathname === '/pages/blog.html'){
             }
         })
     })
-}
