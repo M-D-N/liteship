@@ -275,7 +275,7 @@
                 <!-- Струкутура карточки без рендера через insertAdjacentHTML в main.js -->
                 <!-- Кнопки фильтрации так же работают и без insertAdjacentHTML только класс rub1 нужно менять в соответсвии карточки -->
 
-                <!-- <a href="#!" id="1" class="blog__cart rub1">
+                <a href="#!" id="1" class="blog__cart rub1">
                     <img src="../img/blogCart.svg" alt="blogCart">
                     <div class="blog__cart-time">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -292,7 +292,7 @@
                         <span>24.07.2023</span>
                     </div>
                     <p>Покупать товары из Америки просто и выгодно</p>
-                </a> -->
+                </a>
                 
 
             </div>
@@ -388,6 +388,157 @@
     </footer>
 
     <script src="../js/main.js"></script>
+
+    <script>
+      const carts = [
+          {
+              id: 1,
+              img: '../img/blogCart.svg',
+              time: '24.07.2023',
+              title: 'Покупать товары из Америки просто и выгодно (рубрика 1)',
+              filter: 'rub1',
+              url: 'post.html'
+          },
+          {
+              id: 2,
+              img: '../img/blogCart.svg',
+              time: '24.07.2023',
+              title:'Покупать товары из Америки просто и выгодно (рубрика 2)',
+              filter: 'rub2',
+              url: 'post.html'
+          },
+          {
+              id: 3,
+              img: '../img/blogCart.svg',
+              time: '24.07.2023',
+              title:'Покупать товары из Америки просто и выгодно (рубрика 3)',
+              filter: 'rub3',
+              url: 'post.html'
+          },
+          {
+              id: 4,
+              img: '../img/blogCart.svg',
+              time: '24.07.2023',
+              title:'Покупать товары из Америки просто и выгодно (рубрика 1)',
+              filter: 'rub1',
+              url: 'post.html'
+          },
+          {
+              id: 5,
+              img: '../img/blogCart.svg',
+              time: '24.07.2023',
+              title:'Покупать товары из Америки просто и выгодно (рубрика 3)',
+              filter: 'rub3',
+              url: 'post.html'
+          },
+          {
+              id: 6,
+              img: '../img/blogCart.svg',
+              time: '24.07.2023',
+              title:'Покупать товары из Америки просто и выгодно (рубрика 2)',
+              filter: 'rub2',
+              url: 'post.html'
+          },
+          {
+              id: 7,
+              img: '../img/blogCart.svg',
+              time: '24.07.2023',
+              title:'Покупать товары из Америки просто и выгодно (рубрика 4)',
+              filter: 'rub4',
+              url: 'post.html'
+          },
+          {
+              id: 8,
+              img: '../img/blogCart.svg',
+              time: '24.07.2023',
+              title:'Покупать товары из Америки просто и выгодно (рубрика 4)',
+              filter: 'rub4',
+              url: 'post.html'
+          },
+          {
+              id: 9,
+              img: '../img/blogCart.svg',
+              time: '24.07.2023',
+              title:'Покупать товары из Америки просто и выгодно (рубрика 3)',
+              filter: 'rub3',
+              url: 'post.html'
+          }
+      ]; 
+
+      const cartContainer = document.querySelector('.main__blog-carts');
+
+      carts.forEach((el) => {
+          cartContainer.insertAdjacentHTML('beforeend', `
+              <a href="${el.url}" id="${el.id}" class="blog__cart ${el.filter}">
+                  <img src="${el.img}" alt="blogCart">
+                  <div class="blog__cart-time">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_119_1356)">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.45455C4.38505 1.45455 1.45455 4.38505 1.45455 8C1.45455 11.615 4.38505 14.5455 8 14.5455C11.615 14.5455 14.5455 11.615 14.5455 8C14.5455 4.38505 11.615 1.45455 8 1.45455ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8Z" fill="#004169"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00071 2.90906C8.40237 2.90906 8.72798 3.23467 8.72798 3.63633V7.55049L11.235 8.80402C11.5943 8.98365 11.7399 9.42051 11.5603 9.77976C11.3807 10.139 10.9438 10.2847 10.5845 10.105L7.67546 8.65046C7.42908 8.52727 7.27344 8.27544 7.27344 7.99997V3.63633C7.27344 3.23467 7.59905 2.90906 8.00071 2.90906Z" fill="#004169"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_119_1356">
+                          <rect width="16" height="16" fill="white"/>
+                          </clipPath>
+                          </defs>
+                      </svg>
+                      <span>${el.time}</span>
+                  </div>
+                  <p>${el.title}</p>
+              </a>
+          `);
+      });
+
+      const blogCartsNav = document.querySelectorAll('.blog__carts-nav li');
+      const cart = document.querySelectorAll('.blog__cart');
+
+      const arrBlogNav = Array.from(blogCartsNav);
+
+      const arrCart = Array.from(cart);
+
+      arrBlogNav.map((e) => {
+          e.addEventListener('click', () => {
+              arrBlogNav.map((item) => {
+                  item.classList.remove('active');
+              })
+              e.classList.add('active');
+              if(e.innerHTML === 'Рубрика 1'){
+                  arrCart.map((index) => {
+                      index.style.display = 'none';
+                      if(index.classList.contains('rub1')){
+                          index.style.display = 'grid';
+                      }
+                  })
+              }else if (e.innerHTML === 'Рубрика 2'){
+                  arrCart.map((index) => {
+                      index.style.display = 'none';
+                      if(index.classList.contains('rub2')){
+                          index.style.display = 'grid';
+                      }
+                  })
+              }else if (e.innerHTML === 'Рубрика 3'){
+                  arrCart.map((index) => {
+                      index.style.display = 'none';
+                      if(index.classList.contains('rub3')){
+                          index.style.display = 'grid';
+                      }
+                  })
+              }else if (e.innerHTML === 'Рубрика 4'){
+                  arrCart.map((index) => {
+                      index.style.display = 'none';
+                      if(index.classList.contains('rub4')){
+                          index.style.display = 'grid';
+                      }
+                  })
+              }else if (e.innerHTML === 'Все новости'){
+                  arrCart.map((index) => {
+                      index.style.display = 'grid';
+                  })
+              }
+          })
+      })
+    </script>
      
 </body>
 </html>
