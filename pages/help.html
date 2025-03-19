@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,319 +10,512 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/reviews.css">
+    <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/how.css">
+    <link rel="stylesheet" href="../css/help.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
+
 <body>
 
     <header class="header">
         <div class="header__desktop container">
-          <div class="logo">
-            <a href="/">
-              <img src="/img/logo.svg" alt="logo" width="160" height="30" />
-            </a>
-          </div>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="" class="nav__link">Как это работает</a>
-              </li>
-              <li class="nav__item"><a href="" class="nav__link">Магазины</a></li>
-              <li class="nav__item">
-                <a href="" class="nav__link">Помощь при покупке</a>
-              </li>
-              <li class="nav__item subitems">
-                <span class="nav__link"
-                  ><span>Информация</span>
-                  <svg
-                    class="arrow"
-                    width="9"
-                    height="4"
-                    viewBox="0 0 9 4"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.75 4L8.64711 0.25H0.852886L4.75 4Z"
-                      fill="#B1B1B1"
-                    />
-                  </svg>
-                </span>
-                <div class="information">
-                  <div class="information__top information__content">
-                    <div class="subtitle">Дополнительная информация</div>
-                  </div>
-                  <nav class="information__links information__content">
-                    <ul class="information__list">
-                      <li><a href="#">Цены</a></li>
-                      <li><a href="#">О компании</a></li>
-                      <li><a href="#">Популярные вопросы</a></li>
-                    </ul>
-                    <ul class="information__list">
-                      <li><a href="#">Отзывы</a></li>
-                      <li><a href="#">Блог</a></li>
-                      <li><a href="#">Запрещенные товары</a></li>
-                    </ul>
-                    <ul class="information__list">
-                      <li>
-                        <a href="tel:+998 95 677-60-69" class="contacts"
-                          >+998 95 677-60-69</a
-                        >
-                      </li>
-                      <li>
-                        <a href="mailto:liteship@gmail.com" class="contacts"
-                          >liteship@gmail.com</a
-                        >
-                      </li>
-                    </ul>
-                  </nav>
-                  <div class="information__socials">
+            <div class="logo">
+                <a href="/">
+                    <img src="/img/logo.svg" alt="logo" width="160" height="30" />
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Как это работает</a>
+                    </li>
+                    <li class="nav__item"><a href="" class="nav__link">Магазины</a></li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Помощь при покупке</a>
+                    </li>
+                    <li class="nav__item subitems">
+                        <span class="nav__link"><span>Информация</span>
+                            <svg class="arrow" width="9" height="4" viewBox="0 0 9 4" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.75 4L8.64711 0.25H0.852886L4.75 4Z" fill="#B1B1B1" />
+                            </svg>
+                        </span>
+                        <div class="information">
+                            <div class="information__top information__content">
+                                <div class="subtitle">Дополнительная информация</div>
+                            </div>
+                            <nav class="information__links information__content">
+                                <ul class="information__list">
+                                    <li><a href="#">Цены</a></li>
+                                    <li><a href="#">О компании</a></li>
+                                    <li><a href="#">Популярные вопросы</a></li>
+                                </ul>
+                                <ul class="information__list">
+                                    <li><a href="#">Отзывы</a></li>
+                                    <li><a href="#">Блог</a></li>
+                                    <li><a href="#">Запрещенные товары</a></li>
+                                </ul>
+                                <ul class="information__list">
+                                    <li>
+                                        <a href="tel:+998 95 677-60-69" class="contacts">+998 95 677-60-69</a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:liteship@gmail.com" class="contacts">liteship@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="information__socials">
+                                <a href="#" target="_blank">
+                                    <div class="information__img">
+                                        <img src="/img/icons/information_telegram.svg" alt="telegram" width="48"
+                                            height="48" />
+                                    </div>
+                                    <div class="information__text">
+                                        <span>@tg_name</span>
+                                        <span>Telegram</span>
+                                    </div>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <div class="information__img">
+                                        <img src="/img/icons/information_whatsapp.svg" alt="telegram" width="48"
+                                            height="48" />
+                                    </div>
+                                    <div class="information__text">
+                                        <span>@wa_name</span>
+                                        <span>WhatsApp</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="socials">
+                <li class="socials__item">
                     <a href="#" target="_blank">
-                      <div class="information__img">
-                        <img
-                          src="/img/icons/information_telegram.svg"
-                          alt="telegram"
-                          width="48"
-                          height="48"
-                        />
-                      </div>
-                      <div class="information__text">
-                        <span>@tg_name</span>
-                        <span>Telegram</span>
-                      </div>
+                        <img src="/img/icons//telegram.svg" alt="telegram" width="27" height="27" />
                     </a>
+                </li>
+                <li class="socials__item">
                     <a href="#" target="_blank">
-                      <div class="information__img">
-                        <img
-                          src="/img/icons/information_whatsapp.svg"
-                          alt="telegram"
-                          width="48"
-                          height="48"
-                        />
-                      </div>
-                      <div class="information__text">
-                        <span>@wa_name</span>
-                        <span>WhatsApp</span>
-                      </div>
+                        <img src="/img/icons/whatsapp.svg" alt="whatsapp" width="27" height="27" />
                     </a>
-                  </div>
-                </div>
-              </li>
+                </li>
             </ul>
-          </nav>
-          <ul class="socials">
-            <li class="socials__item">
-              <a href="#" target="_blank">
-                <img
-                  src="/img/icons//telegram.svg"
-                  alt="telegram"
-                  width="27"
-                  height="27"
-                />
-              </a>
-            </li>
-            <li class="socials__item">
-              <a href="#" target="_blank">
-                <img
-                  src="/img/icons/whatsapp.svg"
-                  alt="whatsapp"
-                  width="27"
-                  height="27"
-                />
-              </a>
-            </li>
-          </ul>
-          <div class="lang">
-            <a href="#" class="lang__btn"
-              ><span>RU</span>
-              <svg
-                class="arrow"
-                width="9"
-                height="4"
-                viewBox="0 0 9 4"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M4.25 4L8.14711 0.25H0.352886L4.25 4Z" fill="#00A7BF" />
-              </svg>
-            </a>
-            <ul class="lang__dropdown">
-              <li class="lang__item"><a href="#uz">UZ</a></li>
-            </ul>
-          </div>
-          <div class="btns">
-            <a href="" class="btn transparent">Регистрация</a>
-            <a href="" class="btn">Войти</a>
-          </div>
-          <div class="burger" id="burger">
-            <img src="/img//icons/burger.svg" alt="burger" width="36" height="27">
-            <img src="/img//icons/close.svg" alt="close" width="36" height="27">
-          </div>
+            <div class="lang">
+                <a href="#" class="lang__btn"><span>RU</span>
+                    <svg class="arrow" width="9" height="4" viewBox="0 0 9 4" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.25 4L8.14711 0.25H0.352886L4.25 4Z" fill="#00A7BF" />
+                    </svg>
+                </a>
+                <ul class="lang__dropdown">
+                    <li class="lang__item"><a href="#uz">UZ</a></li>
+                </ul>
+            </div>
+            <div class="btns">
+                <a href="" class="btn transparent">Регистрация</a>
+                <a href="" class="btn">Войти</a>
+            </div>
+            <div class="burger" id="burger">
+                <img src="/img//icons/burger.svg" alt="burger" width="36" height="27">
+                <img src="/img//icons/close.svg" alt="close" width="36" height="27">
+            </div>
         </div>
     </header>
     <div class="header__mobile" id="mobileMenu">
         <div class="header__mobiletitle">Меню</div>
         <nav class="header__mobilenav">
-          <ul class="header__mobilelist">
-            <li class="header__mobileitem"><a href="#">Как это работает</a></li>
-            <li class="header__mobileitem"><a href="#">Магазины</a></li>
-            <li class="header__mobileitem"><a href="#">Помощь при покупке</a></li>
-            <li class="header__mobileitem">
-              <a id="headerMobileDrop" href="#">
-                  Информация 
-                  <svg
-                    class="arrow"
-                    width="9"
-                    height="4"
-                    viewBox="0 0 9 4"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                  <path
-                    d="M4.75 4L8.64711 0.25H0.852886L4.75 4Z"
-                    fill="#B1B1B1"
-                  />
-                </svg>
-              </a>
-              <ul class="header__mobile-drop">
-                <li><a href="#!">Цены</a></li>
-                <li><a href="#!">О компании</a></li>
-                <li><a href="#!">Популярные вопросы</a></li>
-                <li><a href="#!">Отзывы</a></li>
-                <li><a href="#!">Блог</a></li>
-                <li><a href="#!">Запрещенные товары</a></li>
-              </ul>
-            </li>
-            <li class="header__mobileitem"><a href="#">RU</a></li>
-          </ul>
+            <ul class="header__mobilelist">
+                <li class="header__mobileitem"><a href="#">Как это работает</a></li>
+                <li class="header__mobileitem"><a href="#">Магазины</a></li>
+                <li class="header__mobileitem"><a href="#">Помощь при покупке</a></li>
+                <li class="header__mobileitem">
+                    <a id="headerMobileDrop" href="#">
+                        Информация
+                        <svg class="arrow" width="9" height="4" viewBox="0 0 9 4" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.75 4L8.64711 0.25H0.852886L4.75 4Z" fill="#B1B1B1" />
+                        </svg>
+                    </a>
+                    <ul class="header__mobile-drop">
+                        <li><a href="#!">Цены</a></li>
+                        <li><a href="#!">О компании</a></li>
+                        <li><a href="#!">Популярные вопросы</a></li>
+                        <li><a href="#!">Отзывы</a></li>
+                        <li><a href="#!">Блог</a></li>
+                        <li><a href="#!">Запрещенные товары</a></li>
+                    </ul>
+                </li>
+                <li class="header__mobileitem"><a href="#">RU</a></li>
+            </ul>
         </nav>
         <div class="header__mobile-socials">
-          <a href="#" target="_blank">
-            <img
-              src="/img/icons//telegram.svg"
-              alt="telegram"
-              width="50"
-              height="50"
-            />
-          </a>
-          <a href="#" target="_blank">
-            <img
-              src="/img/icons/whatsapp.svg"
-              alt="whatsapp"
-              width="50"
-              height="50"
-            />
-          </a>
+            <a href="#" target="_blank">
+                <img src="/img/icons//telegram.svg" alt="telegram" width="50" height="50" />
+            </a>
+            <a href="#" target="_blank">
+                <img src="/img/icons/whatsapp.svg" alt="whatsapp" width="50" height="50" />
+            </a>
         </div>
         <div class="header__mobile-btns">
-          <a href="#" class="btn transparent">Регистрация</a>
-          <a href="#" class="btn">Войти</a>
+            <a href="#" class="btn transparent">Регистрация</a>
+            <a href="#" class="btn">Войти</a>
         </div>
     </div>
 
     <div class="container">
-      <div class="crust about__crust">
-        <a href="../index.html">Главная</a>
-        <span>/</span>
-        <span>Помошь</span>
-      </div>
+        <div class="crust about__crust">
+            <a href="../index.html">Главная</a>
+            <span>/</span>
+            <span>Помошь</span>
+        </div>
     </div>
 
-    <main></main>
+    <main class="help__main">
+        <div class="container">
+            <div class="about__top">
+
+                <div class="how__top">
+                    <h3>
+                        <svg width="33" height="13" viewBox="0 0 33 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.78366 0.873786L10.7638 5.47582C11.1316 6.04386 11.0639 6.79649 10.6019 7.28685L5.73803 12.4448C5.40372 12.7997 4.94239 13 4.46012 13H0.838551C0.085483 13 -0.284421 12.0635 0.257871 11.5297L5.26274 6.60263C5.32206 6.54418 5.32974 6.44868 5.27949 6.38169L1.91127 1.85663C1.34455 1.09473 1.87637 0 2.813 0H6.19029C6.83168 0 7.42981 0.328556 7.78366 0.8745V0.873786Z"
+                                fill="#00A7BF" />
+                            <path
+                                d="M18.7837 0.873786L21.7638 5.47582C22.1316 6.04386 22.0639 6.79649 21.6019 7.28685L16.738 12.4448C16.4037 12.7997 15.9424 13 15.4601 13H11.8386C11.0855 13 10.7156 12.0635 11.2579 11.5297L16.2627 6.60263C16.3221 6.54418 16.3297 6.44868 16.2795 6.38169L12.9113 1.85663C12.3446 1.09473 12.8764 0 13.813 0H17.1903C17.8317 0 18.4298 0.328556 18.7837 0.8745V0.873786Z"
+                                fill="#00A7BF" />
+                            <path
+                                d="M29.7837 0.873786L32.7638 5.47582C33.1316 6.04386 33.0639 6.79649 32.6019 7.28685L27.738 12.4448C27.4037 12.7997 26.9424 13 26.4601 13H22.8386C22.0855 13 21.7156 12.0635 22.2579 11.5297L27.2627 6.60263C27.3221 6.54418 27.3297 6.44868 27.2795 6.38169L23.9113 1.85663C23.3446 1.09473 23.8764 0 24.813 0H28.1903C28.8317 0 29.4298 0.328556 29.7837 0.8745V0.873786Z"
+                                fill="#00A7BF" />
+                        </svg>
+                        <span>ПОМОЖЕМ С ЗАКАЗАМИ</span>
+                    </h3>
+                    <h1>Помощь при покупке</h1>
+                    <p>
+                        Не знаете английский язык? Магазин не принимает зарубежные карты или отказывается отправлять
+                        товары мейлфорвардерам? Не хотите тратить время на самостоятельный шопинг?
+                    </p>
+                    <p>
+                        Услуга «Помощь при покупке» решит эти проблемы. Вы оформляете заказ через удобную форму в личном
+                        кабинете, а мы покупаем нужный товар в интернет-магазине и доставляем его на наш склад.
+                    </p>
+                    <a class="btn" href="#!">Заказать помощь →</a>
+                </div>
+
+                <img src="../img/helpTop.jpg" alt="aboutTop">
+
+            </div>
+
+            <div class="how__content">
+                <ul class="how__content-ul">
+                    <li class="rub1 active">1. Заполнение формы</li>
+                    <li class="rub2">2. Проверка и подтверждение</li>
+                    <li class="rub3">3. Оплата</li>
+                </ul>
+                <ul class="how__content-ul">
+                    <li class="active">
+                        <span class="how-mobile-nav">1. Заполнение формы</span>
+                        <span>
+                            <svg class="arrow" width="16" height="8" viewBox="0 0 16 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 8L15.7942 0.5H0.205771L8 8Z" fill="#00A7BF" />
+                            </svg>
+                        </span>
+                    </li>
+                </ul>
+                <ul id="howMobileDrop" class="how__content-ul">
+                    <li class="rub1">1. Заполнение формы</li>
+                    <li class="rub2">2. Проверка и подтверждение</li>
+                    <li class="rub3">3. Оплата</li>
+                </ul>
+                <div class="how__content-bar reg active">
+                    <div class="how__content-item">
+                        <div class="how__content-left">
+                            <h2>1. Заполнение формы</h2>
+                            <p>
+                                <span>
+                                    Чтобы оформить заявку на выкуп товара, нажмите кнопку «Новый заказ» и заполните всю необходимую информацию: название товара, ссылка на него, стоимость в магазине; при заказе одежды и обуви необходимо указать размер и цвет.
+                                </span>
+                                <span>
+                                    Для максимально точного выполнения вашего заказа рекомендуем заполнить раздел «Примечание», указав в нем все пожелания.
+                                </span>
+                            </p>
+                        </div>
+                        <img src="../img/howContentReg.svg" alt="registrationContent">
+                    </div>
+                </div>
+                <div class="how__content-bar shop">
+                    <div class="how__content-item">
+                        <div class="how__content-left">
+                            <h2>2. Проверка и подтверждение</h2>
+                            <p>
+                                <span>
+                                    Получаем адрес для покупок в магазинах США и Великобритания
+                                </span>
+                                <span>
+                                    Liteship поможет притвориться американцем и не переплачивать. Для этого нужно
+                                    зарегистрироваться в нашем сервисе. После регистрации вам станут доступны два адреса в США и Великобритания, которые вы сможете указывать при оформлении заказов в
+                                    интернет-магазинах.
+                                </span>
+                            </p>
+                        </div>
+                        <img src="../img/howContentShop.svg" alt="registrationContent">
+                    </div>
+                </div>
+                <div class="how__content-bar send">
+                    <div class="how__content-item">
+                        <div class="how__content-left">
+                            <h2>3. Оплата</h2>
+                            <p>
+                                <span>
+                                    Получаем адрес для покупок в магазинах США и Великобритания
+                                </span>
+                                <span>
+                                    Liteship поможет притвориться американцем и не переплачивать. Для этого нужно
+                                    зарегистрироваться в нашем сервисе. После регистрации вам станут доступны два адреса
+                                    в США и Великобритания, которые вы сможете указывать при оформлении заказов в
+                                    интернет-магазинах.
+                                </span>
+                            </p>
+                        </div>
+                        <img src="../img/howContentSend.svg" alt="registrationContent">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="help__table">
+            <div class="container">
+                <div class="titleblock">
+                    <div class="subtitle">Выберите удобный тариф</div>
+                    <h3 class="title">Тарифы и стоимость услуг</h3>
+                </div>
+                <div class="help__table-item parent">
+                    
+                    <span class="table__top"></span>
+                    <span class="table__top div1">STANDART</span>
+                    <span class="table__top div2">EXPRESS</span>
+
+                    <span class="table__mid table__title div3">Комиссия</span>
+                    <span class="table__mid item4">10 % USA, 8% UK  </span>
+                    <span class="table__mid item5">15% USA, 12 % UK  </span>
+
+                    <span class="table__mid table__title div6">Минимальная комиссия</span>
+                    <span class="table__mid div7">$ 7 USA и £ 6 UK (для каждого магазина)</span>
+                    <span class="table__mid div8">$9 USA и £ 8 UK (для каждого магазина)</span>
+
+                    <span class="table__mid table__title div9">Комиссия для заказов от $1000</span>
+                    <span class="table__mid div10">5 % USA, 4 % UK</span>
+                    <span class="table__mid div11">7  % USA, 6 % UK</span>
+
+                    <span class="table__bot table__title div12">Условия оплаты</span>
+                    <span class="table__bot div13">100 % предоплаты  (Мы сможем выкупить товар только после полной предоплаты заявки в личном кабинете)</span>
+                    <span class="table__bot div14">100 % предоплаты  (Мы сможем выкупить товар только после полной предоплаты заявки в личном кабинете)</span>
+
+                    <span class="table__bot table__title div15">Возврат средств</span>
+                    <span class="table__bot div16">Обратно на вашу карту (Если вы оплатили заявку картой и по какой-либо причине мы не сможем осуществить выкуп, то мы вернем средства обратно на вашу карту)</span>
+                    <span class="table__bot div17">Обратно на вашу карту (Если вы оплатили заявку картой и по какой-либо причине мы не сможем осуществить выкуп, то мы вернем средства обратно на вашу карту)</span> 
+
+                </div>
+                <p>*При расчете комиссии учитывается только стоимость товара без стоимости доставки до склада.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="titleblock">
+                <div class="subtitle">Подробности</div>
+                <h3 class="title">Подробнее о тарифах</h3>
+            </div>
+
+            <div class="help__tarifs">
+                <div class="help__tarif-standart">
+                    <p>STANDART</p>
+                    <p>Тариф Standart включает заполнение декларации. Выкуп за 24 часов. Тариф доступны не для всех магазинов и не для всех товаров. Тариф Standard включает возможность проверить товары на складе через спецзапрос «Сфотографировать вещи». Спецзапрос оформляется клиентом самостоятельно.</p>
+                </div>
+                <div class="help__tarif-express">
+                    <p>EXPRESS</p>
+                    <p>Тариф Express предоставляет все опции тарифа Standart и выкуп заказа происходит в течение 6 часов.  Приоритетный статус заказа сохраняется и после выкупа — он влияет на скорость ответов на комментарии, проверку трекингов и занесение посылок в ваш аккаунт, но не влияет на скорость доставки из магазина на склад. Тариф Express не сочетается с применением купонов и промокодов на бесплатную услугу «Помощь при покупке».</p>
+                </div>
+            </div>
+
+            <div class="help__extrainfo">
+                <div class="help__extra-item">
+                    <h3>Частный адрес</h3>
+                    <p>Некоторые онлайн-магазины не отправляют заказы на адрес склада Бандерольки и адреса других мэйлфорвардеров.</p>
+                    <p>Чтобы наши клиенты могли приобретать товары в таких магазинах, мы организуем доставку на частные адреса, после чего пересылаем заказы на склад.</p>
+                </div>
+                <div class="help__extra-item">
+                    <h3>Доставка на склад</h3>
+                    <p>Доставка посылки до склада Liteship обычно занимает 3–7 рабочих дней в США, до 4-10 дней в Великобритании. </p>
+                    <p>После этого операторы внесут ее в ваш личный кабинет и перенесут названия товаров из заказа в декларацию (названия и стоимость товаров автоматически копируются из заказа в декларацию, полностью декларация заполняется клиентом). Затем посылку можно будет отправить к себе домой. </p>
+                    <p>Доставка товаров со склада Бандерольки к вам домой оплачивается отдельно. Примерную ее стоимость вы можете рассчитать с помощью калькулятора.</p>
+                </div>
+                <div class="help__extra-item">
+                    <h3>Участие в аукционах</h3>
+                    <p>Liteship не участвует в аукционах — выкуп возможен только при условии фиксированной стоимости товара.</p>
+                </div>
+            </div>
+
+            <div class="how__content">
+                <div class="how__content-ask">
+                  <img src="../img/howConnect.svg" alt="howContentAsk">
+                  <div class="how__content-ask-item">
+                    <p>Свяжитесь с нами</p>
+                    <h2>Возникли впоросы?</h2>
+                    <p>У нас есть <a href="">подробный FAQ</a>, а также страница с <a href="актальными новостями">актальными новостями</a>!</p>
+                    <a href="#!" class="btn">Получить адрес  →</a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer class="footer">
         <img src="/img/lines.svg" alt="lines" loading="lazy" class="lines" />
         <div class="footer__inner container">
-          <div class="footer__logo">
-            <a href="/">
-              <img
-                src="/img/footer_logo.svg"
-                alt="logo"
-                loading="lazy"
-                width="160"
-              />
-            </a>
-          </div>
-          <nav class="footer__nav">
-            <ul class="footer__navlist">
-              <li>Навигация</li>
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Как это работает</a></li>
-              <li><a href="#">Магазины</a></li>
-              <li><a href="#">Цены</a></li>
-              <li><a href="#">Контакты</a></li>
+            <div class="footer__logo">
+                <a href="/">
+                    <img src="/img/footer_logo.svg" alt="logo" loading="lazy" width="160" />
+                </a>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__navlist">
+                    <li>Навигация</li>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Как это работает</a></li>
+                    <li><a href="#">Магазины</a></li>
+                    <li><a href="#">Цены</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <ul class="footer__navlist">
+                    <li>Для клиентов</li>
+                    <li><a href="#">Личный кабинет</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+                <ul class="footer__navlist">
+                    <li>Другое</li>
+                    <li><a href="#">Калькулятор</a></li>
+                    <li><a href="#">Позвонить нам</a></li>
+                    <li><a href="#">Оставить заявку</a></li>
+                </ul>
+                <ul class="footer__navlist">
+                    <li>Контакты</li>
+                    <li><a href="tel:+998 95 677-60-69">+998 95 677-60-69</a></li>
+                    <li><a href="mailto:liteship@gmail.com">liteship@gmail.com</a></li>
+                    <li>
+                        <span>Toshkent shahar, Mirobod tumani, A.S.Banokatiy ko’chasi, 225 A
+                            uy</span>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="footer__socials">
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="/img/icons/information_telegram.svg" alt="telegram" width="48" height="48" />
+                        </div>
+                        <div class="content">
+                            <span>@tg_name</span>
+                            <span>Telegram</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <img src="/img/icons/information_whatsapp.svg" alt="whatsapp" width="48" height="48" />
+                        </div>
+                        <div class="content">
+                            <span>@wa_name</span>
+                            <span>WhatsApp</span>
+                        </div>
+                    </a>
+                </li>
             </ul>
-            <ul class="footer__navlist">
-              <li>Для клиентов</li>
-              <li><a href="#">Личный кабинет</a></li>
-              <li><a href="#">Помощь</a></li>
-              <li><a href="#">FAQs</a></li>
-            </ul>
-            <ul class="footer__navlist">
-              <li>Другое</li>
-              <li><a href="#">Калькулятор</a></li>
-              <li><a href="#">Позвонить нам</a></li>
-              <li><a href="#">Оставить заявку</a></li>
-            </ul>
-            <ul class="footer__navlist">
-              <li>Контакты</li>
-              <li><a href="tel:+998 95 677-60-69">+998 95 677-60-69</a></li>
-              <li><a href="mailto:liteship@gmail.com">liteship@gmail.com</a></li>
-              <li>
-                <span
-                  >Toshkent shahar, Mirobod tumani, A.S.Banokatiy ko’chasi, 225 A
-                  uy</span
-                >
-              </li>
-            </ul>
-          </nav>
-          <ul class="footer__socials">
-            <li>
-              <a href="#">
-                <div>
-                  <img
-                    src="/img/icons/information_telegram.svg"
-                    alt="telegram"
-                    width="48"
-                    height="48"
-                  />
-                </div>
-                <div class="content">
-                  <span>@tg_name</span>
-                  <span>Telegram</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div>
-                  <img
-                    src="/img/icons/information_whatsapp.svg"
-                    alt="whatsapp"
-                    width="48"
-                    height="48"
-                  />
-                </div>
-                <div class="content">
-                  <span>@wa_name</span>
-                  <span>WhatsApp</span>
-                </div>
-              </a>
-            </li>
-          </ul>
         </div>
         <div class="copiright container">
-          © 2025 Liteship. Все права защищены.
+            © 2025 Liteship. Все права защищены.
         </div>
     </footer>
 
     <script src="../js/main.js"></script>
 
     <script>
-       
-        
-        
+        // how page
+      const howBtns = document.querySelectorAll('.how__content-ul li');
+      const arrBtns = Array.from(howBtns);
+
+      const contentBars = document.querySelectorAll('.how__content-bar')
+      const arrBars = Array.from(contentBars);
+
+      const dropHow = document.getElementById('howMobileDrop');
+      const mobilSpan = document.querySelector('.how-mobile-nav')
+
+      arrBtns.map((e) => {
+          e.addEventListener('click', () => {
+              arrBtns.map((el) => {
+                  el.classList.remove('active');
+              })
+              e.classList.add('active');
+              
+
+              dropHow.classList.toggle('active');
+
+              if(dropHow.classList.contains('active')){
+                  e.classList.add('activearr');
+              }
+
+              dropHow.addEventListener('click', () => {
+                  mobilSpan.innerHTML = e.innerHTML;
+                  e.classList.add('active');
+                  e.classList.remove('activearr');
+              })
+              // console.log(e.innerHTML);
+              if(e.classList.contains("rub1")){
+                  arrBars.map((item) => {
+                      if(item.classList.contains('reg')){
+                          arrBars.map((index) => {
+                              index.classList.remove('active')
+                          })
+                          item.classList.add('active');
+                      }
+                  })      
+              }else if(e.classList.contains("rub2")){
+                  arrBars.map((item) => {
+                      if(item.classList.contains('shop')){
+                          arrBars.map((index) => {
+                              index.classList.remove('active')
+                          })
+                          item.classList.add('active');
+                      }
+                  })      
+              }else if(e.classList.contains("rub3")){
+                  arrBars.map((item) => {
+                      if(item.classList.contains('send')){
+                          arrBars.map((index) => {
+                              index.classList.remove('active')
+                          })
+                          item.classList.add('active');
+                      }
+                  })      
+              }else if(e.classList.contains("rub4")){
+                  arrBars.map((item) => {
+                      if(item.classList.contains('post')){
+                          arrBars.map((index) => {
+                              index.classList.remove('active')
+                          })
+                          item.classList.add('active');
+                      }
+                  })      
+              }
+          })
+      });
+
+
     </script>
-    
+
 </body>
+
 </html>
