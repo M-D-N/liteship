@@ -20,3 +20,11 @@
     font-weight: 400;
     color: #2B2C41;
 }
+@media(max-width: 407px){
+    .block__main .how__top h3{
+        width: 100%;
+        gap: 5px;
+        flex-direction: column;
+        align-items: start;
+    }
+}
