@@ -105,7 +105,9 @@ const accardionSwiper = () => {
 const burger = document.getElementById("burger");
 const headerMobile = document.getElementById("mobileMenu");
 const headerMobileDrop = document.getElementById("headerMobileDrop");
+const headerMobileDropLang = document.getElementById("headerMobileDropLang");
 const headerMobileDropUl = document.querySelector(".header__mobile-drop");
+const headerMobileDropUlLang = document.querySelector(".lang__drop");
 
 headerMobileDrop.addEventListener("click", function(e){
     e.currentTarget.classList.toggle("active");
@@ -120,6 +122,23 @@ headerMobileDrop.addEventListener("click", function(e){
             headerMobileDropUl.style.height = "0";
             headerMobileDropUl.style.opacity = "0";
             headerMobileDropUl.style.display = "none";
+        }, 100);
+    }
+})
+
+headerMobileDropLang.addEventListener("click", function(e){
+    e.currentTarget.classList.toggle("active");
+    if (e.currentTarget.classList.contains('active')) {
+        headerMobileDropUlLang.style.display = "flex";
+        setTimeout(() => {
+            headerMobileDropUlLang.style.opacity = "1";
+            headerMobileDropUlLang.style.height = "auto";
+        }, 10);
+    } else {
+        setTimeout(() => {
+            headerMobileDropUlLang.style.height = "0";
+            headerMobileDropUlLang.style.opacity = "0";
+            headerMobileDropUlLang.style.display = "none";
         }, 100);
     }
 })

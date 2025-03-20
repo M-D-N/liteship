@@ -35,9 +35,9 @@
             <li class="nav__item">
               <a href="./pages/howorks.html" class="nav__link">Как это работает</a>
             </li>
-            <li class="nav__item"><a href="" class="nav__link">Магазины</a></li>
+            <li class="nav__item"><a href="pages/store.html" class="nav__link">Магазины</a></li>
             <li class="nav__item">
-              <a href="" class="nav__link">Помощь при покупке</a>
+              <a href="pages/help.html" class="nav__link">Помощь при покупке</a>
             </li>
             <li class="nav__item subitems">
               <span class="nav__link"
@@ -69,7 +69,7 @@
                   <ul class="information__list">
                     <li><a href="#">Отзывы</a></li>
                     <li><a href="./pages/blog.html">Блог</a></li>
-                    <li><a href="#">Запрещенные товары</a></li>
+                    <li><a href="pages/blockprod.html">Запрещенные товары</a></li>
                   </ul>
                   <ul class="information__list">
                     <li>
@@ -173,8 +173,8 @@
       <nav class="header__mobilenav">
         <ul class="header__mobilelist">
           <li class="header__mobileitem"><a href="pages/howorks.html">Как это работает</a></li>
-          <li class="header__mobileitem"><a href="#">Магазины</a></li>
-          <li class="header__mobileitem"><a href="#">Помощь при покупке</a></li>
+          <li class="header__mobileitem"><a href="pages/store.html">Магазины</a></li>
+          <li class="header__mobileitem"><a href="pages/help.html">Помощь при покупке</a></li>
           <li class="header__mobileitem">
             <a id="headerMobileDrop" href="#">
                 Информация 
@@ -198,10 +198,30 @@
               <li><a href="#!">Популярные вопросы</a></li>
               <li><a href="#!">Отзывы</a></li>
               <li><a href="pages/blog.html">Блог</a></li>
-              <li><a href="#!">Запрещенные товары</a></li>
+              <li><a href="pages/blockprod.html">Запрещенные товары</a></li>
             </ul>
           </li>
-          <li class="header__mobileitem"><a href="#">RU</a></li>
+          <li class="header__mobileitem">
+            <a id="headerMobileDropLang" href="#!">
+              RU
+              <svg
+                class="arrow"
+                width="9"
+                height="4"
+                viewBox="0 0 9 4"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.75 4L8.64711 0.25H0.852886L4.75 4Z"
+                  fill="#B1B1B1"
+                />
+              </svg>
+            </a>
+            <ul class="header__mobile-drop lang__drop">
+              <li><a href="#!">UZ</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <div class="header__mobile-socials">
@@ -227,6 +247,7 @@
         <a href="#" class="btn">Войти</a>
       </div>
     </div>
+    
     <section class="main">
       <!-- Slider main container -->
       <div class="swiper" id="main_swiper">

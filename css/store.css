@@ -20,7 +20,7 @@
 }
 .store__content .main__blog-carts{
     margin-bottom: 0;
-    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit, 306px);
 }
 .store__content .main__blog-carts .blog__cart{
     padding: 55px 30px 25px 30px;
@@ -118,5 +118,6 @@
 @media(max-width: 670px){
     .store__content .main__blog-carts{
         grid-template-columns: 1fr;
+        row-gap: 20px;
     }
 }

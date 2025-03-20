@@ -23,8 +23,8 @@
 }
 .main__blog-carts{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 410px); 
-    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, 415px); 
+    justify-content: start;
     column-gap: 20px;
     row-gap: 80px;
     padding: 15px 0;
