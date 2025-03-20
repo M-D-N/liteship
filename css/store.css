@@ -96,7 +96,7 @@
     }
     .how__content-ul:nth-of-type(3).active{
         height: max-content;
-        top: 235px;
+        top: 255px;
         width: 88%;
     }
 }

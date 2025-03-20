@@ -259,6 +259,7 @@
         align-items: center;
         padding-left: 0;
         padding-right: 0;
+        border-bottom: none;
     }
     .how__content-ul:nth-of-type(1){
         display: none;
@@ -269,12 +270,15 @@
     .how__content-ul:nth-of-type(3).active{
         position: absolute;
         top: 70px;
-        z-index: 999;
+        z-index: 99;
         background-color: #fff;
         display: block;
         height: 180px;
         opacity: 1;
         transition: all 500ms ease;
+    }
+    .how__content-ul:nth-of-type(3).active li{
+        border-bottom: none;
     }
     .how__content-ask img{
         width: 100%;

@@ -72,7 +72,7 @@
     }
     .main__blog .container .how__content-ul:nth-of-type(3).active{
         height: max-content;
-        top: 190px;
+        top: 210px;
         width: 88.5%;
     }
     .blog__cart img{
