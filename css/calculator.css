@@ -162,11 +162,14 @@
     flex-wrap: wrap;
     row-gap: 24px;
 }
+.calculator__optioninput{
+    position: relative;
+}
 .calculator__optioninput input {
     width: 100%;
     background-color: #fff;
     border-radius: 10px;
-    padding: 12px 14px;
+    padding: 12px 34px 12px 14px;
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
@@ -331,6 +334,17 @@
     margin-bottom: 30px;
     margin-top: 24px;
     display: inline-block;
+}
+
+.calculator__input-span{
+    position: absolute;
+    right: 0;
+    top: 25%;
+    font-size: 16px;
+    line-height: 23px;
+    padding: 0 14px;
+    display: block;
+    user-select: none;
 }
 @media(max-width: 1000px){
     .calculator__options{

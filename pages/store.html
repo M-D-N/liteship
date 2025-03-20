@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liteship | Магазин</title>
+    <link type="image/x-icon" href="/img/liteshipFav.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="/img/liteshipFav.ico" rel="icon">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/common.css">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="../css/blog.css">
     <link rel="stylesheet" href="../css/store.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <title>Liteship | Магазин</title>
 </head>
 <body>
 
@@ -194,7 +196,7 @@
                 <li class="rub4">Рубрика 5</li>
             </ul>
             <ul class="how__content-ul blog__carts-nav">
-                <li class="active">
+                <li class="active activearr">
                   <span class="how-mobile-nav">Одежда и аксессуары</span>
                   <span>
                     <svg class="arrow" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -405,7 +407,7 @@
               dropHow.classList.toggle('active');
 
               if(dropHow.classList.contains('active')){
-                  e.classList.add('activearr');
+                  e.classList.remove('activearr');
               }
 
               dropHow.addEventListener('click', () => {
@@ -465,6 +467,9 @@
               arrBlogNav.map((item) => {
                   item.classList.remove('active');
               })
+
+              e.classList.toggle('activearr');
+
               e.classList.add('active');
               if(e.classList.contains('rub1')){
                   arrCart.map((index) => {
