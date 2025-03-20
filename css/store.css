@@ -47,7 +47,33 @@
 .store__content .main__blog-carts .blog__cart a{
     width: max-content;
 }
-
+.store__main .how__content-ask{
+    position: relative;
+    background: linear-gradient(270deg, #00A7BF 0%, #0036BF 100%);
+    gap: 13px;
+}
+.store__main .how__content-ask img:last-of-type{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 13%;
+    object-fit: contain;
+    display: block;
+    z-index: 0;
+}
+.store__main .how__content-ask .how__content-ask-item p{
+    z-index: 1;
+    font-size: 16px;
+}
+.store__main .how__content-ask .how__content-ask-item h2{
+    z-index: 1;
+    margin-top:  27px;
+    margin-bottom: 0;
+    width: 75%;
+}
+.store__main .how__content-ask .how__content-ask-item .btn{
+    z-index: 1;
+}
 @media(max-width: 1300px){
     .store__main > img{
         width: 30%;
@@ -59,6 +85,10 @@
         width: 20%;
         top: 165px;
     }
+    .store__main .how__content-ask .how__content-ask-item h2{
+        width: 100%;
+    }
+
 }
 @media(max-width: 1000px){
     .store__main > img{
@@ -68,6 +98,21 @@
         height: max-content;
         top: 235px;
         width: 88%;
+    }
+}
+@media (max-width: 840px){
+    .store__main .how__content-ask img:last-of-type{
+        display: none;
+    }
+    .store__main .how__content-ask{
+        flex-direction: column;
+    }
+    .store__main .how__content-ask .how__content-ask-item{
+        padding-top: 0;
+    }
+    .store__main .how__content-ask .how__content-ask-item h2{
+        font-size: 30px;
+        line-height: 35px;
     }
 }
 @media(max-width: 670px){
