@@ -24,8 +24,10 @@
 .main__text {
     font-weight: 400;
     font-size: 15px;
-    line-height: 23px;
-    
+    line-height: 23px;  
+}
+.main__text a{
+    color: #00A7BF;
 }
 .main__subtitle span{
     font-weight: 400;
